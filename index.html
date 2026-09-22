@@ -1133,7 +1133,9 @@ h1, h2, h3 { letter-spacing: -0.035em; }
   .history-photo-stack { display: none; }
 }
 @media (max-width: 560px) {
-  .hero-photo { aspect-ratio: 4 / 5; }
+  .hero-grid { gap: 24px; }
+  .hero-photo { aspect-ratio: 4 / 5; width: min(64vw, 250px); justify-self: center; }
+
   .platform-card h3 { margin-bottom: 22px; }
 }
 
@@ -1486,7 +1488,7 @@ h1, h2, h3 { letter-spacing: -0.035em; }
 <a class="text-link" data-i18n="content.youtubeCta" href="https://youtube.com/@soyadrianlatorre" rel="noopener" target="_blank">Ver mi canal de YouTube →</a>
 </div>
 <a aria-label="Vídeo destacado de YouTube: 6 años de lecciones en 19 minutos (18–24)" class="featured-video media-placeholder" href="https://youtu.be/W7G1Dr41G3s" rel="noopener" target="_blank"><img alt="" aria-hidden="true" class="media-backdrop" src="https://i.ytimg.com/vi/W7G1Dr41G3s/maxresdefault.jpg"/><img alt="Miniatura de 6 años de lecciones en 19 minutos" class="media-thumb" src="https://i.ytimg.com/vi/W7G1Dr41G3s/maxresdefault.jpg"/><span class="media-tag" data-i18n="content.featured">Vídeo destacado</span><div class="media-content media-content-centered"><span aria-hidden="true" class="play-mark play-mark-large">▶</span></div><strong class="featured-video-title" data-i18n="content.featuredVideoTitle">6 años de lecciones en 19 minutos (18–24)</strong></a>
-<div aria-label="Vídeos cortos destacados" class="short-grid"><a class="short-card" href="https://www.youtube.com/shorts/TsrTerj8EyQ" rel="noopener" target="_blank"><img alt="👉 Top 5 personas que debes estudiar antes de morir" class="short-thumb" src="https://i.ytimg.com/vi/TsrTerj8EyQ/hqdefault.jpg"/><span>01</span><strong>👉 Top 5 personas que debes estudiar antes de morir</strong></a><a class="short-card" href="https://www.youtube.com/shorts/qUVnPTopjkA" rel="noopener" target="_blank"><img alt="Las 10 mejores frases de todos los tiempos" class="short-thumb" src="https://i.ytimg.com/vi/qUVnPTopjkA/hqdefault.jpg"/><span>02</span><strong>Las 10 mejores frases de todos los tiempos</strong></a><a class="short-card" href="https://www.youtube.com/shorts/lMTnVKNyg_c" rel="noopener" target="_blank"><img alt="👉 5 libros que debes leer según lo que te falta en la vida" class="short-thumb" src="https://i.ytimg.com/vi/lMTnVKNyg_c/hqdefault.jpg"/><span>03</span><strong>👉 5 libros que debes leer según lo que te falta en la vida</strong></a></div>
+<div aria-label="Vídeos cortos destacados" class="short-grid"><a class="short-card" href="https://www.youtube.com/shorts/TsrTerj8EyQ" rel="noopener" target="_blank"><img alt="👉 Top 5 personas que debes estudiar antes de morir" class="short-thumb" src="https://i.ytimg.com/vi/TsrTerj8EyQ/hqdefault.jpg"/><span>01</span><strong data-i18n="content.shortTitle1">👉 Top 5 personas que debes estudiar antes de morir</strong></a><a class="short-card" href="https://www.youtube.com/shorts/qUVnPTopjkA" rel="noopener" target="_blank"><img alt="Las 10 mejores frases de todos los tiempos" class="short-thumb" src="https://i.ytimg.com/vi/qUVnPTopjkA/hqdefault.jpg"/><span>02</span><strong data-i18n="content.shortTitle2">Las 10 mejores frases de todos los tiempos</strong></a><a class="short-card" href="https://www.youtube.com/shorts/lMTnVKNyg_c" rel="noopener" target="_blank"><img alt="👉 5 libros que debes leer según lo que te falta en la vida" class="short-thumb" src="https://i.ytimg.com/vi/lMTnVKNyg_c/hqdefault.jpg"/><span>03</span><strong data-i18n="content.shortTitle3">👉 5 libros que debes leer según lo que te falta en la vida</strong></a></div>
 </article>
 <div class="platform-grid">
 <article class="platform-card">
@@ -1527,7 +1529,7 @@ h1, h2, h3 { letter-spacing: -0.035em; }
 </div>
 <a class="text-link" data-i18n="recommendations.booksCta" href="books.html">Ver todos los libros →</a>
 </div>
-<div class="book-grid"><article class="book-card"><div class="book-cover"><img alt="Portada de Recuerda que vas a morir. Vive" class="book-cover-image" src="assets/images/book-paul.webp"/></div><div class="book-info"><strong>Recuerda que vas a morir. Vive</strong><span class="book-author">Paul Kalanithi</span><span class="rating">★★★★★ · 5/5</span><p class="book-note" data-i18n="book.note1">Uno de los mejores libros que he leído y uno de los que más impacto ha tenido en mi vida.</p></div></article><article class="book-card"><div class="book-cover"><img alt="Portada de El almanaque de Naval Ravikant" class="book-cover-image" src="assets/images/book-naval.webp"/></div><div class="book-info"><strong>El almanaque de Naval Ravikant</strong><span class="book-author">Eric Jorgenson</span><span class="rating">★★★★★ · 5/5</span><p class="book-note" data-i18n="book.note2">Una guía sobre cómo construir una vida feliz y exitosa a partir de las ideas de Naval Ravikant.</p></div></article><article class="book-card"><div class="book-cover"><img alt="Portada de Controle su destino" class="book-cover-image" src="assets/images/book-tony.webp"/></div><div class="book-info"><strong>Controle su destino</strong><span class="book-author">Anthony Robbins</span><span class="rating">★★★★★ · 5/5</span><p class="book-note" data-i18n="book.note3">El libro que más me ayudó a dejar la carrera y a visualizar la vida que realmente quería.</p></div></article></div>
+<div class="book-grid"><article class="book-card"><div class="book-cover"><img alt="Portada de Recuerda que vas a morir. Vive" class="book-cover-image" src="assets/images/book-paul.webp"/></div><div class="book-info"><strong data-i18n="book.title1">Recuerda que vas a morir. Vive</strong><span class="book-author">Paul Kalanithi</span><span class="rating">★★★★★ · 5/5</span><p class="book-note" data-i18n="book.note1">Uno de los mejores libros que he leído y uno de los que más impacto ha tenido en mi vida.</p></div></article><article class="book-card"><div class="book-cover"><img alt="Portada de El almanaque de Naval Ravikant" class="book-cover-image" src="assets/images/book-naval.webp"/></div><div class="book-info"><strong data-i18n="book.title2">El almanaque de Naval Ravikant</strong><span class="book-author">Eric Jorgenson</span><span class="rating">★★★★★ · 5/5</span><p class="book-note" data-i18n="book.note2">Una guía sobre cómo construir una vida feliz y exitosa a partir de las ideas de Naval Ravikant.</p></div></article><article class="book-card"><div class="book-cover"><img alt="Portada de Controle su destino" class="book-cover-image" src="assets/images/book-tony.webp"/></div><div class="book-info"><strong data-i18n="book.title3">Controle su destino</strong><span class="book-author">Anthony Robbins</span><span class="rating">★★★★★ · 5/5</span><p class="book-note" data-i18n="book.note3">El libro que más me ayudó a dejar la carrera y a visualizar la vida que realmente quería.</p></div></article></div>
 <div class="goodreads-inline"><p data-i18n="recommendations.goodreadsText">En Goodreads puedes ver todas mis lecturas, valoraciones y lo que estoy leyendo actualmente.</p><a class="text-link" data-i18n="recommendations.goodreadsCta" href="https://www.goodreads.com/soyadrianlatorre" rel="noopener" target="_blank">Seguirme en Goodreads →</a></div></div>
 <div class="recommendation-block">
 <div class="recommendation-heading">
@@ -1538,7 +1540,7 @@ h1, h2, h3 { letter-spacing: -0.035em; }
 </div>
 <a class="text-link" data-i18n="recommendations.podcastsCta" href="podcasts.html">Ver todos los podcasts →</a>
 </div>
-<div class="recommendation-preview-grid"><a class="preview-card recommendation-link podcast-preview-card" href="https://open.spotify.com/episode/2KyMXeMQS0djxazcFJZaSb?si=29ff4a66c5e04a19" rel="noopener" target="_blank"><img alt="Naval Ravikant en Modern Wisdom" class="podcast-thumb" src="assets/images/podcast-naval.webp"/><span class="preview-number">01</span><span class="card-meta">Modern Wisdom #922 · 5/5</span><strong>44 Harsh Truths About Human Nature — Naval Ravikant</strong><p data-i18n="podcast.note1">Para mí, el mejor podcast que he escuchado hasta la fecha. Lo he escuchado más de cinco veces; lo poco que aparece Naval en este formato hace que sea especialmente valioso.</p></a><a class="preview-card recommendation-link podcast-preview-card" href="https://open.spotify.com/episode/328DFHU0KBOzgQKfz2Fahb?si=2845efca1bec41c0" rel="noopener" target="_blank"><img alt="David Goggins en Modern Wisdom" class="podcast-thumb" src="assets/images/podcast-goggins.webp"/><span class="preview-number">02</span><span class="card-meta">Modern Wisdom #577 · 5/5</span><strong>This Is How To Master Your Life — David Goggins</strong><p data-i18n="podcast.note2">Un clásico al que vuelvo cuando necesito motivación. La mentalidad de David y su determinación incluso después del éxito me parecen admirables.</p></a><a class="preview-card recommendation-link podcast-preview-card" href="https://open.spotify.com/episode/6R6HkUCZQmaWglxwb6J6Qj?si=b9697ff1e23a4cac" rel="noopener" target="_blank"><img alt="Alex Hormozi en Modern Wisdom" class="podcast-thumb" src="assets/images/podcast-hormozi.webp"/><span class="preview-number">03</span><span class="card-meta">Modern Wisdom #1117</span><strong>33 Brutal Truths To Stop Wasting Your Potential — Alex Hormozi</strong><p data-i18n="podcast.note3">Me encanta porque refleja muchas de mis fases de emprendimiento y mi forma de afrontar la adversidad y distintas situaciones de la vida.</p></a></div>
+<div class="recommendation-preview-grid"><a class="preview-card recommendation-link podcast-preview-card" href="https://open.spotify.com/episode/2KyMXeMQS0djxazcFJZaSb?si=29ff4a66c5e04a19" rel="noopener" target="_blank"><img alt="Naval Ravikant en Modern Wisdom" class="podcast-thumb" src="assets/images/podcast-naval.webp"/><span class="preview-number">01</span><span class="card-meta">Modern Wisdom #922 · 5/5</span><strong data-i18n="podcast.title1">44 duras verdades sobre la naturaleza humana — Naval Ravikant</strong><p data-i18n="podcast.note1">Para mí, el mejor podcast que he escuchado hasta la fecha. Lo he escuchado más de cinco veces; lo poco que aparece Naval en este formato hace que sea especialmente valioso.</p></a><a class="preview-card recommendation-link podcast-preview-card" href="https://open.spotify.com/episode/328DFHU0KBOzgQKfz2Fahb?si=2845efca1bec41c0" rel="noopener" target="_blank"><img alt="David Goggins en Modern Wisdom" class="podcast-thumb" src="assets/images/podcast-goggins.webp"/><span class="preview-number">02</span><span class="card-meta">Modern Wisdom #577 · 5/5</span><strong data-i18n="podcast.title2">Así es como puedes dominar tu vida — David Goggins</strong><p data-i18n="podcast.note2">Un clásico al que vuelvo cuando necesito motivación. La mentalidad de David y su determinación incluso después del éxito me parecen admirables.</p></a><a class="preview-card recommendation-link podcast-preview-card" href="https://open.spotify.com/episode/6R6HkUCZQmaWglxwb6J6Qj?si=b9697ff1e23a4cac" rel="noopener" target="_blank"><img alt="Alex Hormozi en Modern Wisdom" class="podcast-thumb" src="assets/images/podcast-hormozi.webp"/><span class="preview-number">03</span><span class="card-meta">Modern Wisdom #1117</span><strong data-i18n="podcast.title3">33 verdades brutales para dejar de desperdiciar tu potencial — Alex Hormozi</strong><p data-i18n="podcast.note3">Me encanta porque refleja muchas de mis fases de emprendimiento y mi forma de afrontar la adversidad y distintas situaciones de la vida.</p></a></div>
 </div>
 <div class="recommendation-block">
 <div class="recommendation-heading">
@@ -1549,7 +1551,7 @@ h1, h2, h3 { letter-spacing: -0.035em; }
 </div>
 <a class="text-link" data-i18n="recommendations.videosCta" href="videos.html">Ver todos los vídeos →</a>
 </div>
-<div class="recommendation-preview-grid"><a class="preview-card video-card recommendation-link" href="https://www.youtube.com/watch?v=StF0BxSgs68" rel="noopener" target="_blank"><img alt="i found love in australia as an 8-figure entrepreneur" class="video-thumb" src="https://i.ytimg.com/vi/StF0BxSgs68/hqdefault.jpg"/><span aria-hidden="true" class="play-mark small">▶</span><span class="card-meta">YouTube · 01</span><strong>i found love in australia as an 8-figure entrepreneur</strong></a><a class="preview-card video-card recommendation-link" href="https://www.youtube.com/watch?v=ugqVaSOfR5g" rel="noopener" target="_blank"><img alt="Every Overthinker Needs to Hear This — Naval Ravikant" class="video-thumb" src="https://i.ytimg.com/vi/ugqVaSOfR5g/hqdefault.jpg"/><span aria-hidden="true" class="play-mark small">▶</span><span class="card-meta">YouTube · 02</span><strong>Every Overthinker Needs to Hear This — Naval Ravikant</strong></a><a class="preview-card video-card recommendation-link" href="https://www.youtube.com/watch?v=25LUF8GmbFU" rel="noopener" target="_blank"><img alt="I Was An MIT Educated Neurosurgeon Now I'm Unemployed And Alone In The Mountains" class="video-thumb" src="https://i.ytimg.com/vi/25LUF8GmbFU/hqdefault.jpg"/><span aria-hidden="true" class="play-mark small">▶</span><span class="card-meta">YouTube · 03</span><strong>I Was An MIT Educated Neurosurgeon Now I'm Unemployed And Alone In The Mountains</strong></a></div>
+<div class="recommendation-preview-grid"><a class="preview-card video-card recommendation-link" href="https://www.youtube.com/watch?v=StF0BxSgs68" rel="noopener" target="_blank"><img alt="i found love in australia as an 8-figure entrepreneur" class="video-thumb" src="https://i.ytimg.com/vi/StF0BxSgs68/hqdefault.jpg"/><span aria-hidden="true" class="play-mark small">▶</span><span class="card-meta">YouTube · 01</span><strong data-i18n="video.title1">Encontré el amor en Australia siendo un emprendedor de ocho cifras</strong></a><a class="preview-card video-card recommendation-link" href="https://www.youtube.com/watch?v=ugqVaSOfR5g" rel="noopener" target="_blank"><img alt="Every Overthinker Needs to Hear This — Naval Ravikant" class="video-thumb" src="https://i.ytimg.com/vi/ugqVaSOfR5g/hqdefault.jpg"/><span aria-hidden="true" class="play-mark small">▶</span><span class="card-meta">YouTube · 02</span><strong data-i18n="video.title2">Todo el que piensa demasiado necesita escuchar esto — Naval Ravikant</strong></a><a class="preview-card video-card recommendation-link" href="https://www.youtube.com/watch?v=25LUF8GmbFU" rel="noopener" target="_blank"><img alt="I Was An MIT Educated Neurosurgeon Now I'm Unemployed And Alone In The Mountains" class="video-thumb" src="https://i.ytimg.com/vi/25LUF8GmbFU/hqdefault.jpg"/><span aria-hidden="true" class="play-mark small">▶</span><span class="card-meta">YouTube · 03</span><strong data-i18n="video.title3">Fui neurocirujano formado en el MIT; ahora estoy desempleado y solo en las montañas</strong></a></div>
 </div>
 <div class="recommendation-block last">
 <div class="recommendation-heading">
@@ -1577,7 +1579,7 @@ h1, h2, h3 { letter-spacing: -0.035em; }
 <div class="synclinic-title-row"><img alt="Logo de Synclinic.io" class="synclinic-logo" src="https://synclinic.io/logosyn.png"/><h3>Synclinic.io</h3></div>
 <p data-i18n="projects.synclinicText">Un asistente de IA para negocios que automatiza la gestión de citas, reservas y atención al cliente a través de WhatsApp.</p>
 </div>
-<a class="btn btn-light" data-i18n="projects.synclinicCta" href="https://synclinic.io/" rel="noopener" target="_blank">Visitar Synclinic</a>
+<a class="btn btn-light" data-i18n="projects.synclinicCta" href="https://synclinic.io/" rel="noopener" target="_blank">Visitar Synclinic.io</a>
 </article>
 <article class="project-card">
 <div>
@@ -1626,8 +1628,8 @@ h1, h2, h3 { letter-spacing: -0.035em; }
 <h2 data-i18n="footer.recommendations">Recomendaciones</h2>
 <a data-i18n="recommendations.booksTitle" href="books.html">Libros</a>
 <a data-i18n="recommendations.podcastsTitle" href="podcasts.html">Podcasts</a>
-<a data-i18n="recommendations.videosTitle" href="videos.html">Vídeos que merece la pena ver</a>
-<a data-i18n="recommendations.peopleTitle" href="people.html">Personas y canales que sigo</a>
+<a data-i18n="footer.videos" href="videos.html">Vídeos</a>
+<a data-i18n="footer.people" href="people.html">Personas</a>
 </div>
 <div>
 <h2 data-i18n="footer.follow">Sígueme</h2>
@@ -1687,6 +1689,9 @@ h1, h2, h3 { letter-spacing: -0.035em; }
       'content.short1': 'Vídeo corto destacado',
       'content.short2': 'Vídeo corto destacado',
       'content.short3': 'Vídeo corto destacado',
+      'content.shortTitle1': '👉 Top 5 personas que debes estudiar antes de morir',
+      'content.shortTitle2': 'Las 10 mejores frases de todos los tiempos',
+      'content.shortTitle3': '👉 5 libros que debes leer según lo que te falta en la vida',
       'content.instagramTitle': 'La forma más personal de conectar conmigo.',
       'content.instagramText': 'Contenido, proyectos y algo más de mi día a día.',
       'content.instagramCta': 'Ver Instagram →',
@@ -1718,6 +1723,15 @@ h1, h2, h3 { letter-spacing: -0.035em; }
 
       'recommendations.goodreadsText': 'En Goodreads puedes ver todas mis lecturas, valoraciones y lo que estoy leyendo actualmente.',
       'recommendations.goodreadsCta': 'Seguirme en Goodreads →',
+      'book.title1': 'Recuerda que vas a morir. Vive',
+      'book.title2': 'El almanaque de Naval Ravikant',
+      'book.title3': 'Controle su destino',
+      'podcast.title1': '44 duras verdades sobre la naturaleza humana — Naval Ravikant',
+      'podcast.title2': 'Así es como puedes dominar tu vida — David Goggins',
+      'podcast.title3': '33 verdades brutales para dejar de desperdiciar tu potencial — Alex Hormozi',
+      'video.title1': 'Encontré el amor en Australia siendo un emprendedor de ocho cifras',
+      'video.title2': 'Todo el que piensa demasiado necesita escuchar esto — Naval Ravikant',
+      'video.title3': 'Fui neurocirujano formado en el MIT; ahora estoy desempleado y solo en las montañas',
       'book.note1': 'Uno de los mejores libros que he leído y uno de los que más impacto ha tenido en mi vida.',
       'book.note2': 'Una guía sobre cómo construir una vida feliz y exitosa a partir de las ideas de Naval Ravikant.',
       'book.note3': 'El libro que más me ayudó a dejar la carrera y a visualizar la vida que realmente quería.',
@@ -1727,7 +1741,7 @@ h1, h2, h3 { letter-spacing: -0.035em; }
       'section.projects': 'Proyectos',
       'projects.title': 'Algunas de las cosas en las que trabajo y que estoy construyendo.',
       'projects.synclinicText': 'Un asistente de IA para negocios que automatiza la gestión de citas, reservas y atención al cliente a través de WhatsApp.',
-      'projects.synclinicCta': 'Visitar Synclinic',
+      'projects.synclinicCta': 'Visitar Synclinic.io',
       'projects.freelancingTitle': 'Publicidad digital',
       'projects.freelancingText': 'Desde hace varios años trabajo por mi cuenta ayudando a negocios locales a generar clientes potenciales mediante campañas de Facebook e Instagram.',
       'projects.freelancingCta': 'Ver mi trabajo',
@@ -1739,6 +1753,8 @@ h1, h2, h3 { letter-spacing: -0.035em; }
       'footer.home': 'Inicio',
       'footer.recommendations': 'Recomendaciones',
       'footer.follow': 'Sígueme',
+      'footer.videos': 'Vídeos',
+      'footer.people': 'Personas',
       'footer.projects': 'Proyectos',
       'footer.work': 'Mi trabajo',
       'social.youtubeTitle': 'YouTube',
@@ -1776,6 +1792,9 @@ h1, h2, h3 { letter-spacing: -0.035em; }
       'content.short1': 'Featured short video',
       'content.short2': 'Featured short video',
       'content.short3': 'Featured short video',
+      'content.shortTitle1': '👉 Top 5 people you should study before you die',
+      'content.shortTitle2': 'The 10 best quotes of all time',
+      'content.shortTitle3': '👉 5 books you should read depending on what you are missing in life',
       'content.instagramTitle': 'The most personal way to connect with me.',
       'content.instagramText': 'Content, projects and a little more of my day-to-day life.',
       'content.instagramCta': 'View Instagram →',
@@ -1807,6 +1826,15 @@ h1, h2, h3 { letter-spacing: -0.035em; }
 
       'recommendations.goodreadsText': 'On Goodreads you can see everything I have read, my ratings and what I am currently reading.',
       'recommendations.goodreadsCta': 'Follow me on Goodreads →',
+      'book.title1': 'When Breath Becomes Air',
+      'book.title2': 'The Almanack of Naval Ravikant',
+      'book.title3': 'Awaken the Giant Within',
+      'podcast.title1': '44 Harsh Truths About Human Nature — Naval Ravikant',
+      'podcast.title2': 'This Is How To Master Your Life — David Goggins',
+      'podcast.title3': '33 Brutal Truths To Stop Wasting Your Potential — Alex Hormozi',
+      'video.title1': 'i found love in australia as an 8-figure entrepreneur',
+      'video.title2': 'Every Overthinker Needs to Hear This — Naval Ravikant',
+      'video.title3': 'I Was An MIT Educated Neurosurgeon Now I’m Unemployed And Alone In The Mountains',
       'book.note1': 'One of the best books I have read and one of the books that has had the biggest impact on my life.',
       'book.note2': 'A guide to building a happy and successful life through the ideas of Naval Ravikant.',
       'book.note3': 'The book that helped me most when I decided to leave university and picture the life I actually wanted.',
@@ -1816,7 +1844,7 @@ h1, h2, h3 { letter-spacing: -0.035em; }
       'section.projects': 'Projects',
       'projects.title': 'Some of the things I work on and am building.',
       'projects.synclinicText': 'An AI assistant for businesses that automates appointment management, bookings and customer service through WhatsApp.',
-      'projects.synclinicCta': 'Visit Synclinic',
+      'projects.synclinicCta': 'Visit Synclinic.io',
       'projects.freelancingTitle': 'Digital advertising',
       'projects.freelancingText': 'For the past few years I have worked independently, helping local businesses generate leads through Facebook and Instagram campaigns.',
       'projects.freelancingCta': 'See my work',
@@ -1828,6 +1856,8 @@ h1, h2, h3 { letter-spacing: -0.035em; }
       'footer.home': 'Home',
       'footer.recommendations': 'Recommendations',
       'footer.follow': 'Follow me',
+      'footer.videos': 'Videos',
+      'footer.people': 'People',
       'footer.projects': 'Projects',
       'footer.work': 'My work',
       'social.youtubeTitle': 'YouTube',
