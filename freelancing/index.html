@@ -188,6 +188,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;
   }
 
   /* ---------- Credibility strip ---------- */
@@ -242,11 +243,12 @@
   }
 
   .cred-badge .badge-mark {
-    width: 72px;
-    height: 72px;
+    width: 76px;
+    height: 76px;
     border-radius: 50%;
     flex-shrink: 0;
-    object-fit: cover;
+    object-fit: contain;
+    background: #fff;
   }
 
   /* ---------- Method ---------- */
@@ -359,7 +361,7 @@
       padding-top: 24px;
       padding-bottom: 48px;
     }
-    .hero-photo { order: -1; aspect-ratio: 16/10; }
+    .hero-photo { order: -1; aspect-ratio: 4/5; max-width: 460px; margin: 0 auto; }
     .credibility .wrap { gap: 22px; }
     .cred-item {
       border-right: none;
@@ -443,7 +445,7 @@
 <span class="cred-label" data-i18n="cred.anyBusiness">negocios locales, cualquier sector</span>
 </div>
 <div class="cred-badge">
-<span aria-hidden="true" class="badge-mark-fallback">Meta</span>
+<img alt="" aria-hidden="true" class="badge-mark" src="../assets/images/meta-certified-badge.png"/>
 <span data-i18n="cred.metaBadge">Certificado por Meta</span>
 </div>
 </div>
