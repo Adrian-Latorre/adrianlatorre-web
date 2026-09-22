@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Podcasts y episodios que recomiendo — Adrián Latorre</title>
+<meta name="description" content="Una selección de podcasts y episodios que recomiendo, con valoraciones y opiniones personales de Adrián Latorre.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#E7D7CB;--surface:#F5EEE6;--ink:#211C18;--soft:#5E5148;--accent:#2F4739;--border:rgba(33,28,24,.14);--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6}a{color:inherit}img{max-width:100%;display:block}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(231,215,203,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}.head{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:'Space Grotesk',sans-serif;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:10px}.brand img{width:34px;height:34px;border-radius:8px;object-fit:cover}.back{font-size:13px;text-decoration:none;color:var(--soft)}
+.lang{display:flex;border:1px solid var(--border);border-radius:999px;padding:3px}.lang button{border:0;background:transparent;padding:6px 10px;border-radius:999px;cursor:pointer;font:700 12px 'Space Grotesk',sans-serif;color:var(--soft)}.lang button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.hero{padding:92px 0 58px}.kicker{color:var(--accent);font:700 12px 'Space Grotesk',sans-serif;letter-spacing:.11em;text-transform:uppercase}.hero h1{font:600 clamp(42px,6vw,72px)/1.02 'Space Grotesk',sans-serif;letter-spacing:-.04em;margin:12px 0 18px;max-width:900px}.hero p{max-width:720px;color:var(--soft);font-size:18px;margin:0}
+.section-title{font:600 clamp(28px,3vw,38px)/1.1 'Space Grotesk',sans-serif;letter-spacing:-.03em;margin:0 0 24px}
+.episodes{display:grid;gap:22px;padding:8px 0 90px}.episode{border:1px solid var(--border);border-radius:22px;background:rgba(245,238,230,.58);padding:22px;display:grid;grid-template-columns:240px 1fr;gap:26px;align-items:start}.episode-img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:16px}.episode-content{min-width:0;padding:4px 0}.eyebrow-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:10px}.meta{color:var(--accent);font:700 11px 'Space Grotesk',sans-serif;letter-spacing:.07em;text-transform:uppercase}.rating{font:700 12px 'Space Grotesk',sans-serif;color:var(--accent)}.episode h2{font:600 clamp(24px,2.5vw,34px)/1.12 'Space Grotesk',sans-serif;letter-spacing:-.03em;margin:0 0 14px}.note{color:var(--soft);font-size:15px;line-height:1.7;margin:0 0 20px;max-width:70ch}.spotify{display:inline-flex;align-items:center;gap:8px;padding:11px 15px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font:700 13px 'Space Grotesk',sans-serif}
+.listen{padding:0 0 90px}.listen-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:24px}.listen-head p{margin:0;color:var(--soft);max-width:560px}.podcast-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.pod-card{border:1px solid var(--border);border-radius:20px;background:rgba(245,238,230,.48);padding:16px;text-decoration:none;display:flex;gap:14px;align-items:center;transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}.pod-card:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(33,28,24,.08);border-color:rgba(47,71,57,.3)}.pod-cover{width:84px;height:84px;border-radius:18px;object-fit:cover;flex-shrink:0}.pod-copy{min-width:0}.pod-copy h3{font:600 19px/1.15 'Space Grotesk',sans-serif;letter-spacing:-.02em;margin:0 0 6px}.pod-copy p{margin:0 0 8px;color:var(--soft);font-size:14px;line-height:1.45}.pod-copy span{color:var(--accent);font:700 12px 'Space Grotesk',sans-serif;letter-spacing:.03em}
+footer{padding:30px 0;border-top:1px solid var(--border);color:var(--soft);font-size:12px}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px}
+@media(max-width:980px){.podcast-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){.episode{grid-template-columns:190px 1fr}}
+@media(max-width:620px){.wrap{width:min(var(--max),calc(100% - 30px))}.head{min-height:68px;gap:12px}.back{display:none}.hero{padding-top:58px}.episode{grid-template-columns:1fr;gap:18px;padding:18px}.episode-img{width:min(100%,300px);margin:auto}.episode h2{font-size:25px}.podcast-grid{grid-template-columns:1fr}.pod-card{padding:14px}.pod-cover{width:76px;height:76px;border-radius:16px}.listen-head{display:block}.listen-head p{margin-top:10px}}
+</style>
+</head>
+<body>
+<header><div class="wrap head"><a class="brand" href="index.html"><img src="assets/images/brand-logo.webp" alt="">Adrián Latorre</a><a class="back" data-i18n="back" href="index.html">← Volver a inicio</a><div class="lang"><button aria-pressed="true" data-lang="es">ES</button><button aria-pressed="false" data-lang="en">EN</button></div></div></header>
+<main>
+<section class="hero"><div class="wrap"><span class="kicker" data-i18n="kicker">Recomendaciones</span><h1 data-i18n="title">Podcasts y episodios que recomiendo</h1><p data-i18n="lead">Una selección de conversaciones a las que volvería y programas que escucho de forma habitual.</p></div></section>
+<div class="wrap">
+<section class="episodes">
+<article class="episode"><img class="episode-img" src="assets/images/podcast-naval.webp" alt="Naval Ravikant en Modern Wisdom"><div class="episode-content"><div class="eyebrow-row"><span class="meta">Modern Wisdom #922</span><span class="rating">★★★★★ · 5/5</span></div><h2>44 Harsh Truths About Human Nature — Naval Ravikant</h2><p class="note" data-i18n="p1note">Para mí, el mejor podcast que he escuchado hasta la fecha. Lo he escuchado más de cinco veces; lo poco que aparece Naval en este formato hace que cada conversación suya tenga un valor especial.</p><a class="spotify" href="https://open.spotify.com/episode/2KyMXeMQS0djxazcFJZaSb?si=29ff4a66c5e04a19" target="_blank" rel="noopener" data-i18n="listen">Abrir en Spotify →</a></div></article>
+<article class="episode"><img class="episode-img" src="assets/images/podcast-goggins.webp" alt="David Goggins en Modern Wisdom"><div class="episode-content"><div class="eyebrow-row"><span class="meta">Modern Wisdom #577</span><span class="rating">★★★★★ · 5/5</span></div><h2>This Is How To Master Your Life — David Goggins</h2><p class="note" data-i18n="p2note">Un clásico al que vuelvo cuando necesito motivación. La mentalidad de David, su disciplina y su capacidad de seguir exigiéndose incluso después de alcanzar el éxito me parecen especialmente admirables.</p><a class="spotify" href="https://open.spotify.com/episode/328DFHU0KBOzgQKfz2Fahb?si=2845efca1bec41c0" target="_blank" rel="noopener" data-i18n="listen">Abrir en Spotify →</a></div></article>
+<article class="episode"><img class="episode-img" src="assets/images/podcast-hormozi.webp" alt="Alex Hormozi en Modern Wisdom"><div class="episode-content"><div class="eyebrow-row"><span class="meta">Modern Wisdom #1117</span><span class="rating">★★★★★ · 5/5</span></div><h2>33 Brutal Truths To Stop Wasting Your Potential — Alex Hormozi</h2><p class="note" data-i18n="p3note">Es una conversación con la que conecto mucho por la forma en la que Hormozi habla de emprendimiento, adversidad y responsabilidad personal. Varias de las ideas reflejan etapas y formas de pensar que reconozco en mi propio camino.</p><a class="spotify" href="https://open.spotify.com/episode/6R6HkUCZQmaWglxwb6J6Qj?si=b9697ff1e23a4cac" target="_blank" rel="noopener" data-i18n="listen">Abrir en Spotify →</a></div></article>
+</section>
+<section class="listen"><div class="listen-head"><div><span class="kicker" data-i18n="regularKicker">Escucho habitualmente</span><h2 class="section-title" data-i18n="regularTitle">Podcasts que más escucho</h2></div><p data-i18n="regularLead">No todos los episodios entran en mis favoritos, pero estos son algunos de los programas que más suelo escuchar.</p></div><div class="podcast-grid"><a class="pod-card" href="https://open.spotify.com/show/0XrOqvxlqQI6bmdYHuIVnr?si=8303fda479894321" target="_blank" rel="noopener">
+                <img class="pod-cover" src="assets/images/podcast-modernwisdom.png" alt="Modern Wisdom">
+                <div class="pod-copy">
+                  <h3>Modern Wisdom</h3>
+                  <p>Chris Williamson</p>
+                  <span data-i18n="openPodcast">Abrir podcast en Spotify →</span>
+                </div>
+              </a>
+<a class="pod-card" href="https://open.spotify.com/show/5XWpDtVEGxBhRJ4h9p2nBd?si=73752e75a2364efb" target="_blank" rel="noopener">
+                <img class="pod-cover" src="assets/images/podcast-roca.png" alt="ROCA PROJECT">
+                <div class="pod-copy">
+                  <h3>ROCA PROJECT</h3>
+                  <p>Carlos Roca</p>
+                  <span data-i18n="openPodcast">Abrir podcast en Spotify →</span>
+                </div>
+              </a>
+<a class="pod-card" href="https://open.spotify.com/show/2ZfXmbzilttkGkulk1ORnt" target="_blank" rel="noopener">
+                <img class="pod-cover" src="assets/images/podcast-tengounplan.png" alt="Tengo un Plan">
+                <div class="pod-copy">
+                  <h3>Tengo un Plan</h3>
+                  <p>Sergio Beguería y Juan Domínguez</p>
+                  <span data-i18n="openPodcast">Abrir podcast en Spotify →</span>
+                </div>
+              </a>
+<a class="pod-card" href="https://open.spotify.com/show/7iQXmUT7XGuZSzAMjoNWlX" target="_blank" rel="noopener">
+                <img class="pod-cover" src="assets/images/podcast-doac.png" alt="The Diary of a CEO">
+                <div class="pod-copy">
+                  <h3>The Diary of a CEO</h3>
+                  <p>Steven Bartlett</p>
+                  <span data-i18n="openPodcast">Abrir podcast en Spotify →</span>
+                </div>
+              </a>
+<a class="pod-card" href="https://open.spotify.com/show/6YNopzKDGDwf0auIpPTIID" target="_blank" rel="noopener">
+                <img class="pod-cover" src="assets/images/podcast-thegame.png" alt="The Game with Alex Hormozi">
+                <div class="pod-copy">
+                  <h3>The Game with Alex Hormozi</h3>
+                  <p>Alex Hormozi</p>
+                  <span data-i18n="openPodcast">Abrir podcast en Spotify →</span>
+                </div>
+              </a>
+<a class="pod-card" href="https://open.spotify.com/show/79CkJF3UJTHFV8Dse3Oy0P" target="_blank" rel="noopener">
+                <img class="pod-cover" src="assets/images/podcast-huberman.png" alt="Huberman Lab">
+                <div class="pod-copy">
+                  <h3>Huberman Lab</h3>
+                  <p>Andrew Huberman</p>
+                  <span data-i18n="openPodcast">Abrir podcast en Spotify →</span>
+                </div>
+              </a>
+
+</div></section>
+</div>
+</main>
+<footer><div class="wrap foot"><span>© 2026 Adrián Latorre</span><a href="https://youtube.com/@soyadrianlatorre" target="_blank" rel="noopener">YouTube</a></div></footer>
+<script>
+(function(){const S={es:{back:'← Volver a inicio',kicker:'Recomendaciones',title:'Podcasts y episodios que recomiendo',lead:'Una selección de conversaciones a las que volvería y programas que escucho de forma habitual.',p1note:'Para mí, el mejor podcast que he escuchado hasta la fecha. Lo he escuchado más de cinco veces; lo poco que aparece Naval en este formato hace que cada conversación suya tenga un valor especial.',p2note:'Un clásico al que vuelvo cuando necesito motivación. La mentalidad de David, su disciplina y su capacidad de seguir exigiéndose incluso después de alcanzar el éxito me parecen especialmente admirables.',p3note:'Es una conversación con la que conecto mucho por la forma en la que Hormozi habla de emprendimiento, adversidad y responsabilidad personal. Varias de las ideas reflejan etapas y formas de pensar que reconozco en mi propio camino.',listen:'Abrir en Spotify →',regularKicker:'Escucho habitualmente',regularTitle:'Podcasts que más escucho',regularLead:'No todos los episodios entran en mis favoritos, pero estos son algunos de los programas que más suelo escuchar.',openPodcast:'Abrir podcast en Spotify →'},en:{back:'← Back home',kicker:'Recommendations',title:'Podcasts and episodes I recommend',lead:'A selection of conversations I would return to and shows I listen to regularly.',p1note:'For me, the best podcast episode I have listened to so far. I have listened to it more than five times; Naval appears so rarely in this format that each conversation feels especially valuable.',p2note:'A classic I return to whenever I need motivation. David’s mindset, discipline and ability to keep pushing himself even after achieving success are especially admirable to me.',p3note:'This is a conversation I connect with deeply because of the way Hormozi talks about entrepreneurship, adversity and personal responsibility. Several ideas reflect phases and ways of thinking I recognize in my own path.',listen:'Open in Spotify →',regularKicker:'Regular listening',regularTitle:'Podcasts I listen to most',regularLead:'Not every episode becomes a favorite, but these are some of the shows I listen to most often.',openPodcast:'Open podcast on Spotify →'}};function setLang(l){document.documentElement.lang=l;document.querySelectorAll('[data-i18n]').forEach(e=>{const k=e.dataset.i18n;if(S[l][k])e.textContent=S[l][k]});document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===l?'true':'false'));try{localStorage.setItem('siteLanguage',l)}catch(e){}}document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));let l='es';try{l=localStorage.getItem('siteLanguage')||((navigator.language||'es').toLowerCase().startsWith('en')?'en':'es')}catch(e){}setLang(l)})();
+</script>
+</body></html>

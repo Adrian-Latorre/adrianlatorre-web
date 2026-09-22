@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vídeos que merece la pena ver — Adrián Latorre</title>
+<meta name="description" content="Una selección de vídeos de YouTube que Adrián Latorre recomienda ver con calma.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#E7D7CB;--surface:#F5EEE6;--ink:#211C18;--soft:#5E5148;--accent:#2F4739;--border:rgba(33,28,24,.14);--max:1120px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6}
+a{color:inherit} img{max-width:100%;display:block}
+.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(231,215,203,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.head{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-family:'Space Grotesk',sans-serif;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+.brand img{width:34px;height:34px;border-radius:8px;object-fit:cover}
+.back{font-size:13px;text-decoration:none;color:var(--soft)}
+.lang{display:flex;border:1px solid var(--border);border-radius:999px;padding:3px}
+.lang button{border:0;background:transparent;padding:6px 10px;border-radius:999px;cursor:pointer;font:700 12px 'Space Grotesk',sans-serif;color:var(--soft)}
+.lang button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.hero{padding:92px 0 54px}
+.kicker{color:var(--accent);font:700 12px 'Space Grotesk',sans-serif;letter-spacing:.11em;text-transform:uppercase}
+.hero h1{font:600 clamp(42px,6vw,72px)/1.02 'Space Grotesk',sans-serif;letter-spacing:-.04em;margin:12px 0 18px;max-width:900px}
+.hero p{max-width:740px;color:var(--soft);font-size:18px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding:10px 0 90px;align-items:stretch}
+.video-card{border:1px solid var(--border);border-radius:20px;background:rgba(245,238,230,.58);overflow:hidden;text-decoration:none;display:flex;flex-direction:column;min-width:0;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.video-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(33,28,24,.08);border-color:rgba(47,71,57,.30)}
+.thumb-wrap{position:relative;aspect-ratio:16/9;background:#181614;overflow:hidden}
+.thumb{width:100%;height:100%;object-fit:cover;transition:transform .22s ease}
+.video-card:hover .thumb{transform:scale(1.025)}
+.thumb-wrap:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.18))}
+.play{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;padding-left:3px;color:white;border:1px solid rgba(255,255,255,.72);background:rgba(0,0,0,.34);font-size:16px;backdrop-filter:blur(4px)}
+.number{position:absolute;z-index:2;left:12px;top:12px;padding:5px 8px;border-radius:999px;background:rgba(0,0,0,.56);color:white;font:700 10px 'Space Grotesk',sans-serif;letter-spacing:.08em}
+.video-copy{padding:18px 18px 19px;display:flex;flex-direction:column;flex:1}
+.channel{color:var(--accent);font:700 11px 'Space Grotesk',sans-serif;letter-spacing:.07em;text-transform:uppercase;margin-bottom:8px}
+.video-copy h2{font:600 20px/1.2 'Space Grotesk',sans-serif;letter-spacing:-.025em;margin:0 0 11px}
+.video-copy p{color:var(--soft);font-size:13.5px;line-height:1.58;margin:0 0 16px}
+.watch{margin-top:auto;color:var(--accent);font:700 12px 'Space Grotesk',sans-serif}
+footer{padding:30px 0;border-top:1px solid var(--border);color:var(--soft);font-size:12px}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:20px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.wrap{width:min(var(--max),calc(100% - 30px))}.head{min-height:68px;gap:12px}.back{display:none}.hero{padding-top:58px}.grid{grid-template-columns:1fr;gap:18px;padding-bottom:64px}.video-copy{padding:17px}.video-copy h2{font-size:20px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap head">
+    <a class="brand" href="index.html"><img src="assets/images/brand-logo.webp" alt="">Adrián Latorre</a>
+    <a class="back" data-i18n="back" href="index.html">← Volver a inicio</a>
+    <div class="lang"><button aria-pressed="true" data-lang="es">ES</button><button aria-pressed="false" data-lang="en">EN</button></div>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker" data-i18n="kicker">Recomendaciones</span>
+      <h1 data-i18n="title">Vídeos que merece la pena ver</h1>
+      <p data-i18n="lead">Una selección de vídeos que me han hecho pensar, aprender o ver algo de otra manera.</p>
+    </div>
+  </section>
+  <div class="wrap"><section class="grid">
+    
+        <a class="video-card" href="https://www.youtube.com/watch?v=StF0BxSgs68" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img class="thumb" src="https://i.ytimg.com/vi/StF0BxSgs68/hqdefault.jpg" alt="i found love in australia as an 8-figure entrepreneur" loading="lazy">
+            <span class="play" aria-hidden="true">▶</span>
+            <span class="number">01</span>
+          </div>
+          <div class="video-copy">
+            <span class="channel">MrFourToEight</span>
+            <h2>i found love in australia as an 8-figure entrepreneur</h2>
+            <p data-i18n="d1">Un vídeo distinto a los típicos de negocios: mezcla ambición, relaciones y vida personal. Me gusta porque recuerda que construir una vida extraordinaria no debería reducirse únicamente a trabajar y ganar dinero.</p>
+            <span class="watch" data-i18n="watch">Ver vídeo →</span>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://www.youtube.com/watch?v=ugqVaSOfR5g" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img class="thumb" src="https://i.ytimg.com/vi/ugqVaSOfR5g/hqdefault.jpg" alt="Every Overthinker Needs to Hear This — Naval Ravikant" loading="lazy">
+            <span class="play" aria-hidden="true">▶</span>
+            <span class="number">02</span>
+          </div>
+          <div class="video-copy">
+            <span class="channel">Chris Williamson</span>
+            <h2>Every Overthinker Needs to Hear This — Naval Ravikant</h2>
+            <p data-i18n="d2">Una conversación breve sobre ansiedad, presencia y decisiones. Naval explica cómo los conflictos internos generan estrés y por qué aprender a estar realmente presente puede cambiar la calidad con la que vivimos.</p>
+            <span class="watch" data-i18n="watch">Ver vídeo →</span>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://www.youtube.com/watch?v=25LUF8GmbFU" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img class="thumb" src="https://i.ytimg.com/vi/25LUF8GmbFU/hqdefault.jpg" alt="I Was An MIT Educated Neurosurgeon Now I&#x27;m Unemployed And Alone In The Mountains" loading="lazy">
+            <span class="play" aria-hidden="true">▶</span>
+            <span class="number">03</span>
+          </div>
+          <div class="video-copy">
+            <span class="channel">Goobie and Doobie</span>
+            <h2>I Was An MIT Educated Neurosurgeon Now I&#x27;m Unemployed And Alone In The Mountains</h2>
+            <p data-i18n="d3">La historia de un neurocirujano formado en el MIT que abandona una carrera a la que dedicó veinte años. Una reflexión muy potente sobre éxito convencional, propósito, salud y el coste de seguir un camino que deja de tener sentido.</p>
+            <span class="watch" data-i18n="watch">Ver vídeo →</span>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://www.youtube.com/watch?v=ihiPR6TmyFs" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img class="thumb" src="https://i.ytimg.com/vi/ihiPR6TmyFs/hqdefault.jpg" alt="¿Por qué ya NO SABES pensar? — recuperar tu CRITERIO PROPIO" loading="lazy">
+            <span class="play" aria-hidden="true">▶</span>
+            <span class="number">04</span>
+          </div>
+          <div class="video-copy">
+            <span class="channel">Danae Covey</span>
+            <h2>¿Por qué ya NO SABES pensar? — recuperar tu CRITERIO PROPIO</h2>
+            <p data-i18n="d4">Sobre cómo el consumo constante de contenido, las opiniones ajenas y los estímulos digitales pueden erosionar nuestro criterio. Invita a recuperar silencio, atención y pensamiento independiente en una época llena de ruido.</p>
+            <span class="watch" data-i18n="watch">Ver vídeo →</span>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://www.youtube.com/watch?v=7IIawiXqLsU" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img class="thumb" src="https://i.ytimg.com/vi/7IIawiXqLsU/hqdefault.jpg" alt="You&#x27;re not lazy, you&#x27;re just lost" loading="lazy">
+            <span class="play" aria-hidden="true">▶</span>
+            <span class="number">05</span>
+          </div>
+          <div class="video-copy">
+            <span class="channel">El Consejero</span>
+            <h2>You&#x27;re not lazy, you&#x27;re just lost</h2>
+            <p data-i18n="d5">Una explicación de por qué muchas veces la procrastinación no es simple pereza, sino falta de dirección y saturación de estímulos. Une dopamina, hábitos y claridad para entender cómo recuperar motivación y foco.</p>
+            <span class="watch" data-i18n="watch">Ver vídeo →</span>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://www.youtube.com/watch?v=2H7chFMmQsU" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img class="thumb" src="https://i.ytimg.com/vi/2H7chFMmQsU/hqdefault.jpg" alt="5 formas de volver a disfrutar la vida | dopamina + neurociencia" loading="lazy">
+            <span class="play" aria-hidden="true">▶</span>
+            <span class="number">06</span>
+          </div>
+          <div class="video-copy">
+            <span class="channel">Mente en Pausa</span>
+            <h2>5 formas de volver a disfrutar la vida | dopamina + neurociencia</h2>
+            <p data-i18n="d6">Explica de forma sencilla cómo funciona el sistema de recompensa y qué ocurre cuando nos acostumbramos a estímulos constantes. Una buena introducción para volver a disfrutar actividades simples sin necesitar novedad todo el tiempo.</p>
+            <span class="watch" data-i18n="watch">Ver vídeo →</span>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://www.youtube.com/watch?v=KHd-luu3M8s" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img class="thumb" src="https://i.ytimg.com/vi/KHd-luu3M8s/hqdefault.jpg" alt="Your phone addiction is keeping you from achieving flow state | Arthur Brooks" loading="lazy">
+            <span class="play" aria-hidden="true">▶</span>
+            <span class="number">07</span>
+          </div>
+          <div class="video-copy">
+            <span class="channel">Big Think Clips</span>
+            <h2>Your phone addiction is keeping you from achieving flow state | Arthur Brooks</h2>
+            <p data-i18n="d7">Arthur Brooks conecta la adicción al móvil con la dopamina, el aburrimiento y nuestra dificultad para entrar en estados de concentración profunda. También propone límites concretos para recuperar atención y espacio mental.</p>
+            <span class="watch" data-i18n="watch">Ver vídeo →</span>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://www.youtube.com/watch?v=hGVHxFQF2ac" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img class="thumb" src="https://i.ytimg.com/vi/hGVHxFQF2ac/hqdefault.jpg" alt="Si me das 5 minutos, te ahorro mínimo 5 años de vida..." loading="lazy">
+            <span class="play" aria-hidden="true">▶</span>
+            <span class="number">08</span>
+          </div>
+          <div class="video-copy">
+            <span class="channel">Carlos Hernández</span>
+            <h2>Si me das 5 minutos, te ahorro mínimo 5 años de vida...</h2>
+            <p data-i18n="d8">Cinco minutos sobre los deseos que adoptamos sin darnos cuenta por presión social, redes o necesidad de validación. Sirve para cuestionar si una meta realmente es tuya antes de dedicarle años de tu vida.</p>
+            <span class="watch" data-i18n="watch">Ver vídeo →</span>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://www.youtube.com/watch?v=V-iMQ2ktX7k" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img class="thumb" src="https://i.ytimg.com/vi/V-iMQ2ktX7k/hqdefault.jpg" alt="$1B CEO: 8 rules I wish I knew in my 20s" loading="lazy">
+            <span class="play" aria-hidden="true">▶</span>
+            <span class="number">09</span>
+          </div>
+          <div class="video-copy">
+            <span class="channel">Greg Lav</span>
+            <h2>$1B CEO: 8 rules I wish I knew in my 20s</h2>
+            <p data-i18n="d9">Lecciones sobre foco, disciplina, consistencia y paciencia después de años construyendo una empresa. Especialmente útil para recordar que el progreso grande suele venir de hacer pocas cosas bien durante mucho tiempo.</p>
+            <span class="watch" data-i18n="watch">Ver vídeo →</span>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://www.youtube.com/watch?v=U0-ttGGB7b4" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img class="thumb" src="https://i.ytimg.com/vi/U0-ttGGB7b4/hqdefault.jpg" alt="When You Just Ain&#x27;t Got It All Together" loading="lazy">
+            <span class="play" aria-hidden="true">▶</span>
+            <span class="number">10</span>
+          </div>
+          <div class="video-copy">
+            <span class="channel">Dry Creek Wrangler School</span>
+            <h2>When You Just Ain&#x27;t Got It All Together</h2>
+            <p data-i18n="d10">Una charla sencilla para esos momentos en los que parece que deberías tener la vida resuelta y no es así. Recuerda que equivocarte o sentirte perdido forma parte del proceso y no significa que seas un fracaso.</p>
+            <span class="watch" data-i18n="watch">Ver vídeo →</span>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://www.youtube.com/watch?v=8Hvgx8e86DY" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img class="thumb" src="https://i.ytimg.com/vi/8Hvgx8e86DY/hqdefault.jpg" alt="NAIA Y SU GRITO A LA VIDA: Un legado imborrable" loading="lazy">
+            <span class="play" aria-hidden="true">▶</span>
+            <span class="number">11</span>
+          </div>
+          <div class="video-copy">
+            <span class="channel">ROCA PROJECT</span>
+            <h2>NAIA Y SU GRITO A LA VIDA: Un legado imborrable</h2>
+            <p data-i18n="d11">Una conversación difícil de olvidar sobre vida, muerte, familia y legado. Es de esos contenidos que ponen el tiempo en perspectiva y te hacen valorar mucho más a las personas y los momentos que normalmente damos por hechos.</p>
+            <span class="watch" data-i18n="watch">Ver vídeo →</span>
+          </div>
+        </a>
+
+        <a class="video-card" href="https://www.youtube.com/watch?v=WZIZNG_H9R8" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img class="thumb" src="https://i.ytimg.com/vi/WZIZNG_H9R8/hqdefault.jpg" alt="Mis mayores aprendizajes a los 44 años" loading="lazy">
+            <span class="play" aria-hidden="true">▶</span>
+            <span class="number">12</span>
+          </div>
+          <div class="video-copy">
+            <span class="channel">Borja Vilaseca</span>
+            <h2>Mis mayores aprendizajes a los 44 años</h2>
+            <p data-i18n="d12">Una recopilación de aprendizajes sobre autenticidad, plenitud, responsabilidad personal, dolor y relaciones. Condensa en pocos minutos ideas que pueden servir para cuestionar cómo estás viviendo y qué entiendes por éxito.</p>
+            <span class="watch" data-i18n="watch">Ver vídeo →</span>
+          </div>
+        </a>
+  </section></div>
+</main>
+<footer><div class="wrap foot"><span>© 2026 Adrián Latorre</span><a href="https://youtube.com/@soyadrianlatorre" target="_blank" rel="noopener">YouTube</a></div></footer>
+<script>
+(function(){
+  const S={
+    es:{back:'← Volver a inicio',kicker:'Recomendaciones',title:'Vídeos que merece la pena ver',lead:'Una selección de vídeos que me han hecho pensar, aprender o ver algo de otra manera.',watch:'Ver vídeo →',d1:'Un vídeo distinto a los típicos de negocios: mezcla ambición, relaciones y vida personal. Me gusta porque recuerda que construir una vida extraordinaria no debería reducirse únicamente a trabajar y ganar dinero.',d2:'Una conversación breve sobre ansiedad, presencia y decisiones. Naval explica cómo los conflictos internos generan estrés y por qué aprender a estar realmente presente puede cambiar la calidad con la que vivimos.',d3:'La historia de un neurocirujano formado en el MIT que abandona una carrera a la que dedicó veinte años. Una reflexión muy potente sobre éxito convencional, propósito, salud y el coste de seguir un camino que deja de tener sentido.',d4:'Sobre cómo el consumo constante de contenido, las opiniones ajenas y los estímulos digitales pueden erosionar nuestro criterio. Invita a recuperar silencio, atención y pensamiento independiente en una época llena de ruido.',d5:'Una explicación de por qué muchas veces la procrastinación no es simple pereza, sino falta de dirección y saturación de estímulos. Une dopamina, hábitos y claridad para entender cómo recuperar motivación y foco.',d6:'Explica de forma sencilla cómo funciona el sistema de recompensa y qué ocurre cuando nos acostumbramos a estímulos constantes. Una buena introducción para volver a disfrutar actividades simples sin necesitar novedad todo el tiempo.',d7:'Arthur Brooks conecta la adicción al móvil con la dopamina, el aburrimiento y nuestra dificultad para entrar en estados de concentración profunda. También propone límites concretos para recuperar atención y espacio mental.',d8:'Cinco minutos sobre los deseos que adoptamos sin darnos cuenta por presión social, redes o necesidad de validación. Sirve para cuestionar si una meta realmente es tuya antes de dedicarle años de tu vida.',d9:'Lecciones sobre foco, disciplina, consistencia y paciencia después de años construyendo una empresa. Especialmente útil para recordar que el progreso grande suele venir de hacer pocas cosas bien durante mucho tiempo.',d10:'Una charla sencilla para esos momentos en los que parece que deberías tener la vida resuelta y no es así. Recuerda que equivocarte o sentirte perdido forma parte del proceso y no significa que seas un fracaso.',d11:'Una conversación difícil de olvidar sobre vida, muerte, familia y legado. Es de esos contenidos que ponen el tiempo en perspectiva y te hacen valorar mucho más a las personas y los momentos que normalmente damos por hechos.',d12:'Una recopilación de aprendizajes sobre autenticidad, plenitud, responsabilidad personal, dolor y relaciones. Condensa en pocos minutos ideas que pueden servir para cuestionar cómo estás viviendo y qué entiendes por éxito.'},
+    en:{back:'← Back home',kicker:'Recommendations',title:'Videos worth watching',lead:'A selection of videos that made me think, learn or see something differently.',watch:'Watch video →',d1:'A different kind of business video, mixing ambition, relationships and personal life. I like it because it is a reminder that building an extraordinary life should not be reduced to work and money alone.',d2:'A short conversation about anxiety, presence and decision-making. Naval explains how inner conflicts create stress and why learning to be fully present can change the quality of the way we live.',d3:'The story of an MIT-educated neurosurgeon who walks away from a career he spent twenty years building. A powerful reflection on conventional success, purpose, health and the cost of following a path that no longer feels meaningful.',d4:"About how constant content consumption, other people's opinions and digital stimulation can erode our judgment. It invites us to recover silence, attention and independent thinking in an age full of noise.",d5:'An explanation of why procrastination is often not simple laziness, but a lack of direction and overstimulation. It connects dopamine, habits and clarity to show how motivation and focus can be rebuilt.',d6:'A simple explanation of how the reward system works and what happens when we become used to constant stimulation. A useful introduction to enjoying simple activities again without always needing something new.',d7:'Arthur Brooks connects phone addiction with dopamine, boredom and our difficulty entering deep states of concentration. He also proposes concrete boundaries for reclaiming attention and mental space.',d8:'Five minutes about desires we absorb without realizing it through social pressure, social media or the need for validation. It helps you question whether a goal is truly yours before dedicating years of your life to it.',d9:'Lessons on focus, discipline, consistency and patience after years of building a company. Especially useful as a reminder that major progress usually comes from doing a few things well for a very long time.',d10:'A simple talk for those moments when it feels like you should already have life figured out and you do not. It is a reminder that making mistakes or feeling lost is part of the process and does not make you a failure.',d11:'A difficult conversation to forget about life, death, family and legacy. It puts time into perspective and makes you value the people and moments we normally take for granted much more deeply.',d12:'A collection of lessons on authenticity, fulfillment, personal responsibility, pain and relationships. It condenses ideas that can help you question how you are living and what success actually means to you.'}
+  };
+  function setLang(l){
+    document.documentElement.lang=l;
+    document.querySelectorAll('[data-i18n]').forEach(e=>{const k=e.dataset.i18n;if(S[l][k])e.textContent=S[l][k]});
+    document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===l?'true':'false'));
+    try{localStorage.setItem('siteLanguage',l)}catch(e){}
+  }
+  document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+  let l='es';
+  try{l=localStorage.getItem('siteLanguage')||((navigator.language||'es').toLowerCase().startsWith('en')?'en':'es')}catch(e){}
+  setLang(l);
+})();
+</script>
+</body>
+</html>
