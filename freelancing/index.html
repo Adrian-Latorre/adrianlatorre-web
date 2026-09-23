@@ -406,6 +406,157 @@
 
 
 .freelance-brand-logo{width:34px;height:34px;border-radius:8px;object-fit:cover;flex:0 0 34px}
+
+  /* ---------- V27: results and client work ---------- */
+  .credibility .wrap { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; }
+  .cred-item, .cred-badge { min-width: 0; padding: 0 22px; border-right: 1px solid var(--border); }
+  .cred-item:first-child { padding-left: 0; }
+  .cred-badge { border: 0; padding-right: 0; }
+  .cred-number { white-space: nowrap; }
+
+  .section-kicker { display: block; color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 14px; }
+  .section-title { font-size: clamp(27px, 3vw, 36px); line-height: 1.15; }
+  .section-intro { margin: 14px 0 0; color: var(--ink-soft); font-size: 17px; max-width: 62ch; }
+
+  .clients { padding: 72px 0 80px; }
+  .clients-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 32px; }
+  .client-logo { position: relative; display: block; height: 154px; overflow: hidden; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; }
+  .client-logo img { position: absolute; left: 50%; top: 50%; width: 190%; max-width: none; height: auto; transform: translate(-50%, -50%); }
+  .client-logo:nth-child(2) img { width: 220%; }
+  .client-logo:nth-child(3) img { width: 165%; }
+  .client-logo:nth-child(4) img { width: 170%; }
+  .client-logo:nth-child(5) img { width: 155%; }
+  .client-logo:nth-child(6) { background: #3e3b44; }
+  .client-logo:nth-child(6) img { width: 180%; }
+
+  .case-study { background: var(--surface); padding: 84px 0 92px; }
+  .case-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 66px; align-items: start; }
+  .case-context { color: var(--ink-soft); font-size: 16px; margin: 24px 0 0; max-width: 43ch; }
+  .case-results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .case-result { padding: 24px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; }
+  .case-result strong { display: block; color: var(--accent); font: 700 clamp(25px, 3vw, 36px)/1.1 'Space Grotesk', sans-serif; }
+  .case-result span { display: block; margin-top: 11px; font-size: 14px; color: var(--ink-soft); }
+  .case-note { grid-column: 1 / -1; margin: 4px 0 0; font-size: 13px; color: var(--ink-soft); }
+
+  .services { padding: 84px 0 32px; }
+  .services-grid { margin-top: 34px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .service { padding: 25px 27px; background: rgba(245, 238, 230, .62); border: 1px solid var(--border); border-radius: 10px; }
+  .service h3 { font-size: 19px; }
+  .service p { margin: 8px 0 0; color: var(--ink-soft); font-size: 16px; }
+
+  @media (max-width: 950px) {
+    .credibility .wrap { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 24px; }
+    .cred-item, .cred-badge { border: 0; padding: 0; }
+    .clients-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .case-layout { gap: 36px; }
+  }
+  @media (max-width: 600px) {
+    .credibility .wrap { grid-template-columns: 1fr; }
+    .clients { padding: 56px 0 64px; }
+    .clients-grid { grid-template-columns: 1fr; gap: 12px; }
+    .client-logo { height: 148px; }
+    .case-study { padding: 64px 0; }
+    .case-layout, .services-grid { grid-template-columns: 1fr; }
+    .case-results { gap: 9px; }
+    .case-result { padding: 19px; }
+    .services { padding: 64px 0 16px; }
+  }
+
+
+/* ---------- V28 refinements ---------- */
+.credibility .wrap { padding-top: 42px; padding-bottom: 42px; align-items: stretch; }
+.cred-item, .cred-badge { flex-direction: column; justify-content: center; text-align: center; gap: 8px; min-height: 126px; }
+.cred-number { font-size: clamp(34px, 3.4vw, 44px); line-height: 1.06; }
+.cred-label { max-width: 22ch; margin: 0 auto; font-size: 15px; line-height: 1.4; }
+.cred-badge { font-weight: 600; font-size: 15px; }
+.cred-badge .badge-mark { width: 58px; height: 58px; }
+.client-logo img { width: 125%; }
+.client-logo:nth-child(2) img { width: 160%; }
+.client-logo:nth-child(3) img { width: 115%; }
+.client-logo:nth-child(4) img { width: 115%; }
+.client-logo:nth-child(5) img { width: 110%; }
+.client-logo:nth-child(6) { background: var(--surface); }
+.client-logo:nth-child(6) img { width: 120%; }
+.case-evidence { min-width: 0; }
+.case-screenshot { display: block; overflow: hidden; border-radius: 10px; border: 1px solid var(--border); background: #fff; }
+.case-screenshot img { width: 100%; height: auto; }
+.case-screenshot:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.case-caption { color: var(--ink-soft); font-size: 13px; margin: 8px 0 22px; }
+.case-context + .case-context { margin-top: 15px; }
+.case-results { gap: 12px; }
+.services { padding-bottom: 76px; }
+.service-icon { display: grid; place-items: center; width: 44px; height: 44px; margin-bottom: 18px; border-radius: 9px; color: var(--accent); background: rgba(47, 71, 57, .09); }
+.service-icon svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.faq { background: #fff; padding: 80px 0 86px; }
+.faq .section-title { max-width: 24ch; }
+.faq-list { margin-top: 32px; border-top: 1px solid var(--border); }
+.faq details { border-bottom: 1px solid var(--border); }
+.faq summary { position: relative; list-style: none; cursor: pointer; padding: 23px 42px 23px 0; font: 600 18px/1.4 'Space Grotesk', sans-serif; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: '+'; position: absolute; right: 4px; top: 17px; font-size: 26px; font-weight: 400; color: var(--accent); }
+.faq details[open] summary::after { content: '−'; }
+.faq details p { margin: 0 0 24px; max-width: 68ch; color: var(--ink-soft); font-size: 16px; }
+@media (max-width: 950px) {
+  .cred-item, .cred-badge { min-height: 112px; }
+}
+@media (max-width: 600px) {
+  .credibility .wrap { gap: 0; padding-top: 16px; padding-bottom: 16px; }
+  .cred-item, .cred-badge { min-height: 100px; padding: 15px 0; border-bottom: 1px solid var(--border); }
+  .cred-badge { border-bottom: 0; }
+  .cred-number { font-size: 39px; }
+  .cred-badge .badge-mark { width: 48px; height: 48px; }
+  .case-results { grid-template-columns: 1fr; gap: 10px; }
+  .case-result { padding: 20px 22px; }
+  .case-result strong { font-size: 31px; }
+  .services { padding-bottom: 60px; }
+  .faq { padding: 64px 0 68px; }
+  .faq summary { font-size: 17px; }
+}
+
+
+/* ---------- V29 final refinements ---------- */
+.cred-item, .cred-badge { display: grid; grid-template-rows: 76px minmax(52px, auto); justify-items: center; align-content: start; gap: 8px; padding-top: 16px; padding-bottom: 16px; }
+.cred-number { display: flex; align-items: center; justify-content: center; min-height: 76px; }
+.cred-label, .cred-badge > span:last-child { display: block; min-height: 52px; max-width: 30ch; margin: 0 auto; line-height: 1.4; }
+.cred-badge .badge-mark { width: 70px; height: 70px; margin: 3px auto; }
+.client-logo img { width: 112%; }
+.client-logo:nth-child(2) img { width: 145%; }
+.client-logo:nth-child(3) img { width: 105%; }
+.client-logo:nth-child(4) img { width: 105%; }
+.client-logo:nth-child(5) img { width: 100%; }
+.client-logo:nth-child(6) img { width: 108%; }
+.case-caption { display: none; }
+.case-results { margin-top: 24px; }
+@media (max-width: 600px) {
+  .cred-item, .cred-badge { grid-template-rows: 58px minmax(44px, auto); }
+  .cred-number { min-height: 58px; }
+  .cred-label, .cred-badge > span:last-child { min-height: 44px; }
+  .cred-item, .cred-badge { padding: 13px 0; }
+  .cred-badge .badge-mark { width: 56px; height: 56px; margin: 1px auto; }
+  .case-caption { display: block; margin: 9px 0 18px; }
+  .case-results { margin-top: 0; }
+}
+
+
+/* ---------- Final spacing correction ---------- */
+.cred-item, .cred-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 140px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.cred-number { display: block; min-height: 0; line-height: 1.06; }
+.cred-label, .cred-badge > span:last-child { min-height: 0; }
+.cred-badge .badge-mark { width: 78px; height: 78px; margin: 0; }
+@media (max-width: 600px) {
+  .cred-item, .cred-badge { min-height: 116px; padding: 14px 0; }
+  .cred-badge .badge-mark { width: 66px; height: 66px; margin: 0; }
+}
+
 </style>
 <link href="data:image/webp;base64,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" rel="icon" type="image/webp"/></head>
 <body>
@@ -438,11 +589,15 @@
 <div class="wrap">
 <div class="cred-item">
 <span class="cred-number">4+</span>
-<span class="cred-label" data-i18n="cred.years">años gestionando campañas de publicidad en redes sociales</span>
+<span class="cred-label" data-i18n="cred.years">años gestionando campañas de publicidad digital</span>
 </div>
 <div class="cred-item">
-<span class="cred-number">100%</span>
-<span class="cred-label" data-i18n="cred.anyBusiness">negocios locales, cualquier sector</span>
+<span class="cred-number">+70.000 €</span>
+<span class="cred-label" data-i18n="cred.spend">gestionados en anuncios de Facebook e Instagram</span>
+</div>
+<div class="cred-item">
+<span class="cred-number">+4.000</span>
+<span class="cred-label" data-i18n="cred.leads">clientes potenciales cualificados generados</span>
 </div>
 <div class="cred-badge">
 <img alt="" aria-hidden="true" class="badge-mark" src="../assets/images/meta-certified-badge.png"/>
@@ -450,34 +605,62 @@
 </div>
 </div>
 </div>
-<section class="method">
+<section class="clients" aria-labelledby="clients-title">
 <div class="wrap">
-<div class="method-head">
-<h2 data-i18n="method.h2">Cómo trabajo</h2>
-<p data-i18n="method.sub">Un proceso simple, sin capas innecesarias entre tú y los resultados.</p>
+<span class="section-kicker" data-i18n="clients.kicker">Experiencia real</span>
+<h2 class="section-title" id="clients-title" data-i18n="clients.h2">Algunos negocios con los que he trabajado</h2>
+<div class="clients-grid"><div class="client-logo"><img src="../assets/images/client-smalium.png" alt="Clínica Dental Smalium" loading="lazy"/></div>
+<div class="client-logo"><img src="../assets/images/client-alvaro-echeverria.png" alt="Clínica Dental Álvaro Echeverría" loading="lazy"/></div>
+<div class="client-logo"><img src="../assets/images/client-barrau.png" alt="Clínica Dental Barrau" loading="lazy"/></div>
+<div class="client-logo"><img src="../assets/images/client-propiodent.png" alt="PropioDent" loading="lazy"/></div>
+<div class="client-logo"><img src="../assets/images/client-casa-albina.png" alt="Casa Albina" loading="lazy"/></div>
+<div class="client-logo"><img src="../assets/images/client-alta-lai-v28.png" alt="Alta-Lai eXTReme.com" loading="lazy"/></div></div>
 </div>
-<div class="steps">
-<div class="step">
-<span class="step-num">1</span>
+</section>
+<section class="case-study" aria-labelledby="case-title">
+<div class="wrap case-layout">
 <div>
-<h3 data-i18n="method.step1.h">Creamos la estrategia comercial</h3>
-<p data-i18n="method.step1.p">Diseño la estrategia y los anuncios pensados para tu negocio y tu público concreto, no un único anuncio suelto.</p>
+<span class="section-kicker" data-i18n="case.kicker">Caso real · 2 meses</span>
+<h2 class="section-title" id="case-title" data-i18n="case.h2">Clínica Dental Álvaro Echeverría</h2>
+<p class="case-context" data-i18n="case.p">La clínica quería ganar visibilidad en su zona y competir por pacientes de implantes. Hasta entonces no había invertido en publicidad digital ni había trabajado las redes sociales como una vía clara para captar pacientes.</p>
+<p class="case-context" data-i18n="case.proposal">Les propuse anunciarse en Facebook e Instagram para llegar a personas de la zona interesadas en mejorar su sonrisa e invitarlas a solicitar una cita de valoración. También lanzamos una promoción puntual de blanqueamiento, aunque el objetivo principal eran los implantes.</p>
+<p class="case-context" data-i18n="case.method">Me ocupé de la estrategia, los textos, las creatividades, los formularios y la optimización de las campañas. Cada nuevo contacto se notificaba por correo electrónico y SMS a la clínica para que su equipo pudiera llamarlo cuanto antes.</p>
+</div>
+<div class="case-evidence">
+<a class="case-screenshot" href="../assets/images/alvaro-campaign-results.png" target="_blank" rel="noopener" aria-label="Ampliar captura de resultados en Meta Ads Manager"><img src="../assets/images/alvaro-campaign-results.png" alt="Captura anonimizada de Meta Ads Manager: 1.625,02 € invertidos, 122 contactos y 13,32 € por contacto" loading="lazy"/></a>
+<p class="case-caption" data-i18n="case.caption">Toca para ampliar la imagen.</p>
+<div class="case-results">
+<div class="case-result"><strong>1.625 €</strong><span data-i18n="case.investment">invertidos en anuncios</span></div>
+<div class="case-result"><strong>122</strong><span data-i18n="case.leads">contactos generados</span></div>
+<div class="case-result"><strong>13,32 €</strong><span data-i18n="case.cpl">coste por contacto</span></div>
+<div class="case-result"><strong>+75.000 €</strong><span data-i18n="case.revenue">ingresos comunicados por la clínica</span></div>
+
 </div>
 </div>
-<div class="step">
-<span class="step-num">2</span>
-<div>
-<h3 data-i18n="method.step2.h">Lanzamos las campañas</h3>
-<p data-i18n="method.step2.p">Configuro y optimizo las campañas en Meta, dirigiendo a formularios nativos de Facebook e Instagram para que la persona no tenga que salir de la app.</p>
+</div>
+</section>
+<section class="services" aria-labelledby="services-title">
+<div class="wrap">
+<span class="section-kicker" data-i18n="services.kicker">El servicio</span>
+<h2 class="section-title" id="services-title" data-i18n="services.h2">Qué hago por tu negocio</h2>
+<div class="services-grid">
+<div class="service"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 11 13-6v14L3 13z"/><path d="M16 8a5 5 0 0 1 0 8M6 14l2 6h3l-2-5"/></svg></span><h3 data-i18n="services.strategy.h">Estrategia y anuncios</h3><p data-i18n="services.strategy.p">Investigo tu mercado, preparo los mensajes y creo las piezas publicitarias.</p></div>
+<div class="service"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 19h18M5 15l5-5 4 3 5-7"/><path d="M16 6h3v3"/></svg></span><h3 data-i18n="services.campaigns.h">Campañas y optimización</h3><p data-i18n="services.campaigns.p">Configuro, pruebo y ajusto tus campañas en Facebook e Instagram.</p></div>
+<div class="service"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 13h5l2 3h4l2-3h5"/></svg></span><h3 data-i18n="services.leads.h">Captación y entrega</h3><p data-i18n="services.leads.p">Creo los formularios y organizo la entrega de los contactos para que puedas atenderlos.</p></div>
+<div class="service"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v5h4M9 12h7M9 16h5"/></svg></span><h3 data-i18n="services.reporting.h">Seguimiento</h3><p data-i18n="services.reporting.p">Reviso los resultados y te cuento qué está funcionando y qué conviene mejorar.</p></div>
 </div>
 </div>
-<div class="step">
-<span class="step-num">3</span>
-<div>
-<h3 data-i18n="method.step3.h">Recibes los contactos</h3>
-<p data-i18n="method.step3.p">Cada nuevo cliente potencial te llega notificado, organizado en un documento compartido, listo para que lo contactes.</p>
-</div>
-</div>
+</section>
+<section class="faq" aria-labelledby="faq-title">
+<div class="wrap">
+<span class="section-kicker" data-i18n="faq.kicker">Dudas habituales</span>
+<h2 class="section-title" id="faq-title" data-i18n="faq.h2">Preguntas frecuentes</h2>
+<div class="faq-list">
+<details><summary data-i18n="faq.business.q">¿Con qué negocios has trabajado?</summary><p data-i18n="faq.business.a">Principalmente con clínicas dentales, además de otros negocios locales. Mi trabajo se centra en generar contactos para servicios que necesitan nuevos clientes.</p></details>
+<details><summary data-i18n="faq.budget.q">¿El presupuesto de publicidad está incluido en el servicio?</summary><p data-i18n="faq.budget.a">No. La inversión en anuncios se paga directamente a Meta y se acuerda por separado de mis honorarios.</p></details>
+<details><summary data-i18n="faq.website.q">¿Necesito una página web para empezar?</summary><p data-i18n="faq.website.a">No necesariamente. Podemos captar contactos mediante formularios dentro de Facebook e Instagram y enviarlos a tu equipo para que los atienda.</p></details>
+<details><summary data-i18n="faq.other.q">¿Ofreces otros servicios de marketing?</summary><p data-i18n="faq.other.a">También puedo ayudarte con contenido orgánico y publicidad en Google. Mi especialidad es la captación de contactos con anuncios en Meta.</p></details>
+<details><summary data-i18n="faq.results.q">¿Garantizas un número concreto de clientes?</summary><p data-i18n="faq.results.a">No puedo garantizar ventas ni un número fijo de clientes. Las campañas generan oportunidades; los resultados también dependen de la oferta, el presupuesto y el seguimiento que haga el negocio.</p></details>
 </div>
 </div>
 </section>
@@ -503,7 +686,44 @@
       'hero.cta': 'Escríbeme por WhatsApp',
       'hero.ctaNote': 'Respondo en menos de 24h',
       'cred.years': 'años gestionando campañas de publicidad digital',
-      'cred.anyBusiness': 'negocios locales, cualquier sector',
+      'cred.spend': 'gestionados en anuncios de Facebook e Instagram',
+      'cred.leads': 'clientes potenciales cualificados generados',
+      'clients.kicker': 'Experiencia real',
+      'clients.h2': 'Algunos negocios con los que he trabajado',
+      'case.kicker': 'Caso real · 2 meses',
+      'case.h2': 'Clínica Dental Álvaro Echeverría',
+      'case.p': 'La clínica quería ganar visibilidad en su zona y competir por pacientes de implantes. Hasta entonces no había invertido en publicidad digital ni había trabajado las redes sociales como una vía clara para captar pacientes.',
+      'case.proposal': 'Les propuse anunciarse en Facebook e Instagram para llegar a personas de la zona interesadas en mejorar su sonrisa e invitarlas a solicitar una cita de valoración. También lanzamos una promoción puntual de blanqueamiento, aunque el objetivo principal eran los implantes.',
+      'case.method': 'Me ocupé de la estrategia, los textos, las creatividades, los formularios y la optimización de las campañas. Cada nuevo contacto se notificaba por correo electrónico y SMS a la clínica para que su equipo pudiera llamarlo cuanto antes.',
+      'case.caption': 'Toca para ampliar la imagen.',
+      'case.open': 'Ampliar captura de resultados en Meta Ads Manager',
+      'faq.kicker': 'Dudas habituales',
+      'faq.h2': 'Preguntas frecuentes',
+      'faq.business.q': '¿Con qué negocios has trabajado?',
+      'faq.business.a': 'Principalmente con clínicas dentales, además de otros negocios locales. Mi trabajo se centra en generar contactos para servicios que necesitan nuevos clientes.',
+      'faq.budget.q': '¿El presupuesto de publicidad está incluido en el servicio?',
+      'faq.budget.a': 'No. La inversión en anuncios se paga directamente a Meta y se acuerda por separado de mis honorarios.',
+      'faq.website.q': '¿Necesito una página web para empezar?',
+      'faq.website.a': 'No necesariamente. Podemos captar contactos mediante formularios dentro de Facebook e Instagram y enviarlos a tu equipo para que los atienda.',
+      'faq.other.q': '¿Ofreces otros servicios de marketing?',
+      'faq.other.a': 'También puedo ayudarte con contenido orgánico y publicidad en Google. Mi especialidad es la captación de contactos con anuncios en Meta.',
+      'faq.results.q': '¿Garantizas un número concreto de clientes?',
+      'faq.results.a': 'No puedo garantizar ventas ni un número fijo de clientes. Las campañas generan oportunidades; los resultados también dependen de la oferta, el presupuesto y el seguimiento que haga el negocio.',
+      'case.investment': 'invertidos en anuncios',
+      'case.leads': 'contactos generados',
+      'case.cpl': 'coste por contacto',
+      'case.revenue': 'ingresos comunicados por la clínica',
+      'case.note': 'Resultados de este caso concreto durante dos meses. Los ingresos son una cifra comunicada por el cliente.',
+      'services.kicker': 'El servicio',
+      'services.h2': 'Qué hago por tu negocio',
+      'services.strategy.h': 'Estrategia y anuncios',
+      'services.strategy.p': 'Investigo tu mercado, preparo los mensajes y creo las piezas publicitarias.',
+      'services.campaigns.h': 'Campañas y optimización',
+      'services.campaigns.p': 'Configuro, pruebo y ajusto tus campañas en Facebook e Instagram.',
+      'services.leads.h': 'Captación y entrega',
+      'services.leads.p': 'Creo los formularios y organizo la entrega de los contactos para que puedas atenderlos.',
+      'services.reporting.h': 'Seguimiento',
+      'services.reporting.p': 'Reviso los resultados y te cuento qué está funcionando y qué conviene mejorar.',
       'cred.metaBadge': 'Certificado por Meta',
       'method.h2': 'Cómo trabajo',
       'method.sub': 'Un proceso simple, sin capas innecesarias entre tú y los resultados.',
@@ -524,7 +744,44 @@
       'hero.cta': 'Message me on WhatsApp',
       'hero.ctaNote': 'I reply within 24h',
       'cred.years': 'years running digital advertising campaigns',
-      'cred.anyBusiness': 'local businesses, any sector',
+      'cred.spend': 'managed in Facebook and Instagram ads',
+      'cred.leads': 'qualified leads generated',
+      'clients.kicker': 'Client work',
+      'clients.h2': 'Some businesses I have worked with',
+      'case.kicker': 'Client case · 2 months',
+      'case.h2': 'Álvaro Echeverría Dental Clinic',
+      'case.p': 'The clinic wanted more visibility in its local area and to compete for implant patients. Until then it had not invested in digital advertising or used social media as a clear way to attract patients.',
+      'case.proposal': 'I suggested Facebook and Instagram ads to reach local people interested in improving their smile and invite them to request a consultation. We also ran a short teeth-whitening promotion, while implants remained the main focus.',
+      'case.method': 'I handled the strategy, copy, creative assets, forms and campaign optimization. Each new lead triggered email and SMS notifications to the clinic so its team could call that person promptly.',
+      'case.caption': 'Tap to enlarge the image.',
+      'case.open': 'Open Ads Manager results screenshot',
+      'faq.kicker': 'Common questions',
+      'faq.h2': 'Frequently asked questions',
+      'faq.business.q': 'What kinds of businesses have you worked with?',
+      'faq.business.a': 'Mostly dental clinics, as well as other local businesses. My work focuses on lead generation for service businesses.',
+      'faq.budget.q': 'Is the ad budget included in your fee?',
+      'faq.budget.a': 'No. You pay the advertising budget directly to Meta, separately from my fee.',
+      'faq.website.q': 'Do I need a website to get started?',
+      'faq.website.a': 'Not necessarily. We can collect enquiries through forms inside Facebook and Instagram and deliver them to your team for follow-up.',
+      'faq.other.q': 'Do you offer other marketing services?',
+      'faq.other.a': 'I can also help with organic content and Google Ads. My specialty is lead generation with Meta ads.',
+      'faq.results.q': 'Do you guarantee a specific number of customers?',
+      'faq.results.a': 'I cannot guarantee sales or a fixed number of customers. Campaigns create opportunities; results also depend on the offer, budget and how your business follows up.',
+      'case.investment': 'spent on ads',
+      'case.leads': 'leads generated',
+      'case.cpl': 'cost per lead',
+      'case.revenue': 'revenue reported by the clinic',
+      'case.note': 'Results from this specific two-month campaign. The revenue figure was reported by the client.',
+      'services.kicker': 'The service',
+      'services.h2': 'What I do for your business',
+      'services.strategy.h': 'Strategy and ads',
+      'services.strategy.p': 'I research your market, write the messaging and create the ad visuals.',
+      'services.campaigns.h': 'Campaigns and optimization',
+      'services.campaigns.p': 'I set up, test and refine your Facebook and Instagram campaigns.',
+      'services.leads.h': 'Lead capture and delivery',
+      'services.leads.p': 'I build the forms and organize lead delivery so you can follow up.',
+      'services.reporting.h': 'Reporting',
+      'services.reporting.p': 'I review the results and explain what is working and what could improve.',
       'cred.metaBadge': 'Certified by Meta',
       'method.h2': 'How I work',
       'method.sub': 'A simple process, with no unnecessary layers between you and the results.',
