@@ -403,7 +403,9 @@ function render(){
 }
 tabs.forEach(tab=>tab.addEventListener('click',()=>{
   active=tab.dataset.filter;
+  topic='all';
   tabs.forEach(button=>button.setAttribute('aria-selected',String(button===tab)));
+  topicButtons.forEach(chip=>chip.setAttribute('aria-pressed',String(chip.dataset.topic==='all')));
   search.value='';visibleLimit=PAGE_SIZE;render();
 }));
 topicButtons.forEach(button=>button.addEventListener('click',()=>{
