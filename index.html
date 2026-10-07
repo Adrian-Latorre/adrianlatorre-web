@@ -384,7 +384,7 @@ h1, h2, h3 { letter-spacing: -0.035em; }
   line-height: 1.14;
   font-weight: 600;
 }
-.youtube-copy .text-link { margin-top: auto; }
+.youtube-actions{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin-top:auto}.youtube-copy .text-link{margin-top:0}.spotify-link:before{content:"●";color:#1DB954;margin-right:7px;font-size:18px;line-height:0}
 .text-link {
   display: inline-flex;
   color: var(--ink);
@@ -1009,19 +1009,6 @@ h1, h2, h3 { letter-spacing: -0.035em; }
   }
   .person-preview .text-link { margin-top: auto; }
 
-  .goodreads-inline {
-    margin-top: 22px;
-    padding: 16px 18px;
-    display: flex;
-    gap: 18px;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    background: rgba(245,238,230,.46);
-  }
-  .goodreads-inline p { margin: 0; color: var(--ink-soft); font-size: 13px; }
-
   @media (max-width: 1020px) {
     .history-photo-pair { grid-column: 2; }
     .history-shot { min-height: 280px; }
@@ -1035,7 +1022,6 @@ h1, h2, h3 { letter-spacing: -0.035em; }
     .history-shot { min-height: 250px; border-radius: 14px; }
     .book-card { grid-template-columns: 92px 1fr; }
     .book-cover { min-height: 145px; }
-    .goodreads-inline { align-items: flex-start; flex-direction: column; }
   }
 
 
@@ -1422,8 +1408,6 @@ h1, h2, h3 { letter-spacing: -0.035em; }
     grid-column: span 2;
     text-align: center;
   }
-  .social-row a:nth-child(4) { grid-column: 2 / span 2; }
-  .social-row a:nth-child(5) { grid-column: 4 / span 2; }
 }
 </style>
 <link href="assets/images/brand-logo.webp" rel="icon" type="image/webp"/></head>
@@ -1471,6 +1455,7 @@ h1, h2, h3 { letter-spacing: -0.035em; }
 <a class="social-brand-link" data-i18n-title="social.tiktokTitle" href="https://www.tiktok.com/@soyadrianlatorre" rel="noopener" target="_blank"><span aria-hidden="true" class="social-icon social-icon-tiktok"><svg viewbox="0 0 24 24"><path d="M14.7 3.2c.5 2.8 2 4.4 4.8 4.7v3.2c-1.8 0-3.4-.5-4.7-1.4v6.1a5.3 5.3 0 1 1-4.5-5.2v3.3a2.1 2.1 0 1 0 1.3 2V3.2h3.1z" fill="#111"></path><path d="M14.7 3.2c.3 1.8 1.1 3.1 2.4 3.9" fill="none" stroke="#25F4EE" stroke-width="1.3"></path><path d="M10.3 10.7a5.3 5.3 0 0 0-3.7 8.9" fill="none" stroke="#FE2C55" stroke-width="1.3"></path></svg></span> TikTok</a>
 <a class="social-brand-link" data-i18n-title="social.xTitle" href="https://x.com/soyadrianlato" rel="noopener" target="_blank"><span aria-hidden="true" class="social-icon social-icon-x"><svg viewbox="0 0 24 24"><rect fill="#111" height="20" rx="5" width="20" x="2" y="2"></rect><path d="M7 7l10 10M17 7L7 17" stroke="#fff" stroke-linecap="round" stroke-width="2.1"></path></svg></span> X</a>
 <a class="social-brand-link" data-i18n-title="social.facebookTitle" href="https://www.facebook.com/soyadrianlatorre/" rel="noopener" target="_blank"><span aria-hidden="true" class="social-icon social-icon-facebook"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" fill="#1877F2" r="10"></circle><path d="M13.6 20v-6.2h2.1l.3-2.4h-2.4V9.8c0-.7.2-1.2 1.2-1.2H16V6.4c-.3 0-1.1-.1-2-.1-2 0-3.4 1.2-3.4 3.5v1.6H8.4v2.4h2.2V20h3z" fill="#fff"></path></svg></span> Facebook</a>
+<a class="social-brand-link" data-i18n-title="social.linkedinTitle" href="https://www.linkedin.com/in/soyadrianlatorre/" rel="noopener" target="_blank"><span aria-hidden="true" class="social-icon social-icon-linkedin"><svg viewbox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="4" fill="#0A66C2"></rect><path d="M7.5 10v7m0-10.2v.2M11 17v-7h2v1.1c.5-.8 1.2-1.3 2.4-1.3 2.1 0 2.6 1.3 2.6 3V17h-2.2v-3.7c0-1-.2-1.6-1.1-1.6-1 0-1.5.7-1.5 1.8V17H11" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.8"></path></svg></span> LinkedIn</a>
 </div>
 </div>
 <figure class="hero-photo">
@@ -1510,7 +1495,7 @@ h1, h2, h3 { letter-spacing: -0.035em; }
 <div class="youtube-copy">
 <span class="platform-label platform-label-with-icon"><span aria-hidden="true" class="social-icon social-icon-youtube"><svg viewbox="0 0 24 24"><rect fill="#FF0000" height="16" rx="5" width="22" x="1" y="4"></rect><path d="M10 8.4L16 12l-6 3.6z" fill="#fff"></path></svg></span> YouTube</span>
 <h3 data-i18n="content.youtubeTitle">Mi plataforma principal para vídeos más largos y con más profundidad.</h3>
-<a class="text-link" data-i18n="content.youtubeCta" href="https://youtube.com/@soyadrianlatorre" rel="noopener" target="_blank">Ver mi canal de YouTube →</a>
+<div class="youtube-actions"><a class="text-link" data-i18n="content.youtubeCta" href="https://youtube.com/@soyadrianlatorre" rel="noopener" target="_blank">Ver mi canal de YouTube →</a><a class="text-link spotify-link" data-i18n="content.spotifyCta" href="https://open.spotify.com/show/56AQ00o2pYx814JmqNlS4P" rel="noopener" target="_blank">Escuchar mi podcast en Spotify →</a></div>
 </div>
 <a aria-label="Vídeo destacado de YouTube: 6 años de lecciones en 19 minutos (18–24)" class="featured-video media-placeholder" href="https://youtu.be/W7G1Dr41G3s" rel="noopener" target="_blank"><img alt="" aria-hidden="true" class="media-backdrop" src="https://i.ytimg.com/vi/W7G1Dr41G3s/maxresdefault.jpg"/><img alt="Miniatura de 6 años de lecciones en 19 minutos" class="media-thumb" src="https://i.ytimg.com/vi/W7G1Dr41G3s/maxresdefault.jpg"/><span class="media-tag" data-i18n="content.featured">Vídeo destacado</span><div class="media-content media-content-centered"><span aria-hidden="true" class="play-mark play-mark-large">▶</span></div><strong class="featured-video-title" data-i18n="content.featuredVideoTitle">6 años de lecciones en 19 minutos (18–24)</strong></a>
 <div aria-label="Vídeos cortos destacados" class="short-grid"><a class="short-card" href="https://www.youtube.com/shorts/TsrTerj8EyQ" rel="noopener" target="_blank"><img alt="👉 Top 5 personas que debes estudiar antes de morir" class="short-thumb" src="https://i.ytimg.com/vi/TsrTerj8EyQ/hqdefault.jpg"/><span>01</span><strong data-i18n="content.shortTitle1">👉 Top 5 personas que debes estudiar antes de morir</strong></a><a class="short-card" href="https://www.youtube.com/shorts/qUVnPTopjkA" rel="noopener" target="_blank"><img alt="Las 10 mejores frases de todos los tiempos" class="short-thumb" src="https://i.ytimg.com/vi/qUVnPTopjkA/hqdefault.jpg"/><span>02</span><strong data-i18n="content.shortTitle2">Las 10 mejores frases de todos los tiempos</strong></a><a class="short-card" href="https://www.youtube.com/shorts/lMTnVKNyg_c" rel="noopener" target="_blank"><img alt="👉 5 libros que debes leer según lo que te falta en la vida" class="short-thumb" src="https://i.ytimg.com/vi/lMTnVKNyg_c/hqdefault.jpg"/><span>03</span><strong data-i18n="content.shortTitle3">👉 5 libros que debes leer según lo que te falta en la vida</strong></a></div>
@@ -1555,7 +1540,7 @@ h1, h2, h3 { letter-spacing: -0.035em; }
 <a class="text-link" data-i18n="recommendations.booksCta" href="books.html">Ver todos los libros →</a>
 </div>
 <div class="book-grid"><a class="book-card recommendation-link book-card-link" href="https://link.amazon/B0bwQimT8" rel="noopener sponsored" target="_blank"><div class="book-cover"><img alt="Portada de Recuerda que vas a morir. Vive" class="book-cover-image" src="assets/images/book-paul.webp"/></div><div class="book-info"><strong data-i18n="book.title1">Recuerda que vas a morir. Vive</strong><span class="book-author">Paul Kalanithi</span><span class="rating">★★★★★ · 5/5</span><p class="book-note" data-i18n="book.note1">Uno de los mejores libros que he leído y uno de los que más impacto ha tenido en mi vida.</p></div></a><a class="book-card recommendation-link book-card-link" href="https://link.amazon/B0dtWBksk" rel="noopener sponsored" target="_blank"><div class="book-cover"><img alt="Portada de El almanaque de Naval Ravikant" class="book-cover-image" src="assets/images/book-naval.webp"/></div><div class="book-info"><strong data-i18n="book.title2">El almanaque de Naval Ravikant</strong><span class="book-author">Eric Jorgenson</span><span class="rating">★★★★★ · 5/5</span><p class="book-note" data-i18n="book.note2">Una guía sobre cómo construir una vida feliz y exitosa a partir de las ideas de Naval Ravikant.</p></div></a><a class="book-card recommendation-link book-card-link" href="https://link.amazon/B04d6WLu7" rel="noopener sponsored" target="_blank"><div class="book-cover"><img alt="Portada de Controle su destino" class="book-cover-image" src="assets/images/book-tony.webp"/></div><div class="book-info"><strong data-i18n="book.title3">Controle su destino</strong><span class="book-author">Anthony Robbins</span><span class="rating">★★★★★ · 5/5</span><p class="book-note" data-i18n="book.note3">El libro que más me ayudó a dejar la carrera y a visualizar la vida que realmente quería.</p></div></a></div>
-<div class="goodreads-inline"><p data-i18n="recommendations.goodreadsText">En Goodreads puedes ver todas mis lecturas, valoraciones y lo que estoy leyendo actualmente.</p><a class="text-link" data-i18n="recommendations.goodreadsCta" href="https://www.goodreads.com/soyadrianlatorre" rel="noopener" target="_blank">Seguirme en Goodreads →</a></div></div>
+</div>
 <div class="recommendation-block">
 <div class="recommendation-heading">
 <div>
@@ -1663,7 +1648,8 @@ h1, h2, h3 { letter-spacing: -0.035em; }
 <a href="https://www.tiktok.com/@soyadrianlatorre" rel="noopener" target="_blank">TikTok</a>
 <a href="https://x.com/soyadrianlato" rel="noopener" target="_blank">X</a>
 <a href="https://www.facebook.com/soyadrianlatorre/" rel="noopener" target="_blank">Facebook</a>
-<a href="https://www.goodreads.com/soyadrianlatorre" rel="noopener" target="_blank">Goodreads</a>
+<a href="https://www.linkedin.com/in/soyadrianlatorre/" rel="noopener" target="_blank">LinkedIn</a>
+<a href="https://open.spotify.com/show/56AQ00o2pYx814JmqNlS4P" rel="noopener" target="_blank">Spotify</a>
 </div>
 <div>
 <h2 data-i18n="footer.projects">Proyectos</h2>
@@ -1709,6 +1695,7 @@ h1, h2, h3 { letter-spacing: -0.035em; }
       'content.title': 'Comparto ideas, aprendizajes y reflexiones en distintos formatos.',
       'content.youtubeTitle': 'Mi plataforma principal para vídeos más largos y con más profundidad.',
       'content.youtubeCta': 'Ver mi canal de YouTube →',
+      'content.spotifyCta': 'Escuchar mi podcast en Spotify →',
       'content.featured': 'Vídeo destacado',
       'content.featuredVideoTitle': '6 años de lecciones en 19 minutos (18–24)',
       'content.short1': 'Vídeo corto destacado',
@@ -1729,7 +1716,7 @@ h1, h2, h3 { letter-spacing: -0.035em; }
       'section.recommendations': 'Recomendaciones',
       'recommendations.title': 'Libros, podcasts, vídeos y personas que me han aportado algo y que considero que merece la pena descubrir.',
       'recommendations.booksTitle': 'Libros',
-      'recommendations.booksText': 'Los libros que más me han aportado y que realmente recomendaría.',
+      'recommendations.booksText': 'Mis 43 lecturas, con valoraciones y opiniones personales.',
       'recommendations.booksCta': 'Ver todos los libros →',
       'recommendations.podcastsTitle': 'Podcasts',
       'recommendations.podcastsText': 'Los podcasts y episodios que considero que merece la pena escuchar.',
@@ -1746,8 +1733,6 @@ h1, h2, h3 { letter-spacing: -0.035em; }
       'recommendations.pendingVideo': 'Vídeo por elegir',
       'recommendations.pendingPerson': 'Persona o canal por elegir',
 
-      'recommendations.goodreadsText': 'En Goodreads puedes ver todas mis lecturas, valoraciones y lo que estoy leyendo actualmente.',
-      'recommendations.goodreadsCta': 'Seguirme en Goodreads →',
       'book.title1': 'Recuerda que vas a morir. Vive',
       'book.title2': 'El almanaque de Naval Ravikant',
       'book.title3': 'Controle su destino',
@@ -1786,7 +1771,8 @@ h1, h2, h3 { letter-spacing: -0.035em; }
       'social.instagramTitle': 'Instagram',
       'social.tiktokTitle': 'TikTok',
       'social.xTitle': 'X',
-      'social.facebookTitle': 'Facebook'
+      'social.facebookTitle': 'Facebook',
+      'social.linkedinTitle': 'LinkedIn'
     },
     en: {
       'a11y.skip': 'Skip to content',
@@ -1812,6 +1798,7 @@ h1, h2, h3 { letter-spacing: -0.035em; }
       'content.title': 'I share ideas, lessons and reflections in different formats.',
       'content.youtubeTitle': 'My main platform for longer, more in-depth videos.',
       'content.youtubeCta': 'Visit my YouTube channel →',
+      'content.spotifyCta': 'Listen to my podcast on Spotify →',
       'content.featured': 'Featured video',
       'content.featuredVideoTitle': '6 years of lessons in 19 minutes (18–24)',
       'content.short1': 'Featured short video',
@@ -1832,7 +1819,7 @@ h1, h2, h3 { letter-spacing: -0.035em; }
       'section.recommendations': 'Recommendations',
       'recommendations.title': 'Books, podcasts, videos and people that have given me something valuable and that I think are worth discovering.',
       'recommendations.booksTitle': 'Books',
-      'recommendations.booksText': 'The books that have given me the most and that I would genuinely recommend.',
+      'recommendations.booksText': 'The 43 books I have read, with my ratings and thoughts on each one.',
       'recommendations.booksCta': 'See all books →',
       'recommendations.podcastsTitle': 'Podcasts',
       'recommendations.podcastsText': 'The podcasts and episodes that I think are worth listening to.',
@@ -1849,8 +1836,6 @@ h1, h2, h3 { letter-spacing: -0.035em; }
       'recommendations.pendingVideo': 'Video to be selected',
       'recommendations.pendingPerson': 'Person or channel to be selected',
 
-      'recommendations.goodreadsText': 'On Goodreads you can see everything I have read, my ratings and what I am currently reading.',
-      'recommendations.goodreadsCta': 'Follow me on Goodreads →',
       'book.title1': 'When Breath Becomes Air',
       'book.title2': 'The Almanack of Naval Ravikant',
       'book.title3': 'Awaken the Giant Within',
@@ -1889,7 +1874,8 @@ h1, h2, h3 { letter-spacing: -0.035em; }
       'social.instagramTitle': 'Instagram',
       'social.tiktokTitle': 'TikTok',
       'social.xTitle': 'X',
-      'social.facebookTitle': 'Facebook'
+      'social.facebookTitle': 'Facebook',
+      'social.linkedinTitle': 'LinkedIn'
     }
   };
 
