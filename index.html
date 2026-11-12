@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#E7D7CB">
   <title>Próximamente — Adrián Latorre</title>
-  <meta name="description" content="Adrián Latorre está preparando un nuevo espacio para compartir ideas y llevarlas a la práctica. Síguelo mientras tanto en YouTube e Instagram.">
+  <meta name="description" content="Adrián Latorre está preparando un nuevo espacio para compartir ideas y llevarlas a la práctica. Síguelo mientras tanto en sus redes sociales.">
   <link rel="canonical" href="https://soyadrianlatorre.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,19 +24,20 @@
     .lang-toggle { display:flex; padding:3px; border:1px solid var(--line); border-radius:100px; }
     .lang-toggle button { border:0; border-radius:100px; padding:6px 12px; background:transparent; color:var(--muted); font:600 12px/1 'Space Grotesk',sans-serif; cursor:pointer; }
     .lang-toggle button[aria-pressed="true"] { background:var(--ink); color:var(--paper); }
-    main { display:grid; align-items:center; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:clamp(36px,7vw,100px); min-height:calc(100svh - 169px); padding-block:84px 96px; }
+    main { display:grid; align-content:center; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); grid-template-rows:auto auto; grid-template-areas:"copy teaser" "follow teaser"; column-gap:clamp(36px,7vw,100px); min-height:calc(100svh - 169px); padding-block:84px 96px; }
+    .copy { grid-area:copy; }
+    .follow-block { grid-area:follow; }
     .eyebrow { margin:0 0 23px; color:var(--green); font:700 12px/1.4 'Space Grotesk',sans-serif; text-transform:uppercase; letter-spacing:.17em; }
     h1 { margin:0; font:600 clamp(60px,8vw,104px)/.98 'Space Grotesk',sans-serif; letter-spacing:-.075em; }
     html[lang="es"] h1 { font-size:clamp(48px,6vw,74px); }
     .accent-line { display:block; width:68px; height:3px; background:var(--green); margin:33px 0 27px; }
     .intro { max-width:43ch; margin:0; font-size:clamp(17px,1.7vw,20px); line-height:1.65; color:#4F443C; }
     .follow-label { margin:43px 0 15px; color:var(--muted); font:700 12px/1.3 'Space Grotesk',sans-serif; letter-spacing:.12em; text-transform:uppercase; }
-    .socials { display:flex; flex-wrap:wrap; gap:10px; }
-    .socials a { display:inline-flex; align-items:center; justify-content:center; min-height:46px; padding:12px 20px; border:1px solid var(--green); border-radius:8px; text-decoration:none; font:600 14px/1.2 'Space Grotesk',sans-serif; transition:transform .18s,background .18s; }
-    .socials a:hover { transform:translateY(-2px); }
-    .socials a:first-child { color:var(--paper); background:var(--green); }
-    .socials a:last-child:hover { background:rgba(47,71,57,.09); }
-    .teaser-wrap { position:relative; }
+    .socials { display:flex; flex-wrap:wrap; gap:12px; }
+    .socials a { display:inline-flex; align-items:center; justify-content:center; width:54px; height:54px; border:1px solid var(--green); border-radius:12px; background:var(--paper); text-decoration:none; transition:transform .18s,background .18s,box-shadow .18s; }
+    .socials a:hover { transform:translateY(-3px); box-shadow:0 8px 18px rgba(33,28,24,.12); }
+    .socials svg { display:block; width:28px; height:28px; }
+    .teaser-wrap { position:relative; grid-area:teaser; align-self:center; }
     .teaser-wrap::before { content:""; position:absolute; inset:12% -5% -8% 5%; background:rgba(47,71,57,.11); filter:blur(42px); border-radius:40px; }
     .teaser { position:relative; isolation:isolate; aspect-ratio:16/10; overflow:hidden; border:10px solid var(--paper); border-radius:18px; box-shadow:0 22px 60px rgba(33,28,24,.17),0 2px 6px rgba(33,28,24,.08); color:var(--paper); background:radial-gradient(circle at 51% 40%,#445c4c 0%,#2d4035 43%,#1d2b25 100%); }
     .teaser::before { content:""; position:absolute; inset:0; background:radial-gradient(circle at 53% 43%,transparent 7%,rgba(13,24,18,.17) 56%,rgba(8,18,12,.52) 100%),linear-gradient(145deg,rgba(245,238,230,.06),transparent 48%); }
@@ -46,30 +47,30 @@
     .teaser-bottom { position:absolute; z-index:1; right:27px; bottom:22px; left:27px; display:flex; align-items:center; justify-content:space-between; gap:16px; padding-top:16px; border-top:1px solid rgba(245,238,230,.3); font:600 11px/1.3 'Space Grotesk',sans-serif; letter-spacing:.12em; text-transform:uppercase; }
     .teaser-bottom span:last-child { opacity:.67; }
     .site-footer { border-top:1px solid var(--line); padding:22px 0 27px; }
-    .footer-inner { display:flex; justify-content:space-between; align-items:center; gap:20px; font-size:13px; color:var(--muted); }
-    .footer-links { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:11px 25px; }
-    .footer-links a { text-decoration:none; }
-    .footer-links a:hover { text-decoration:underline; text-underline-offset:4px; }
+    .footer-inner { font-size:13px; color:var(--muted); text-align:center; }
     @media (max-width:900px) {
-      main { grid-template-columns:1fr; gap:56px; min-height:auto; padding-block:76px 84px; }
+      main { grid-template-columns:1fr; grid-template-rows:auto; grid-template-areas:"copy" "teaser" "follow"; min-height:auto; padding-block:76px 84px; }
       .teaser-wrap { max-width:720px; }
+      .teaser-wrap { margin-top:48px; }
+      .follow-block { margin-top:36px; }
       .question { font-size:clamp(140px,31vw,245px); }
     }
     @media (max-width:600px) {
       .shell { width:min(100% - 38px,1160px); }
       .site-header { padding:21px 0; }
       .brand { font-size:17px; }
-      main { gap:44px; padding-block:66px 70px; }
+      main { padding-block:54px 62px; }
       h1 { font-size:clamp(56px,15vw,78px); }
       html[lang="es"] h1 { font-size:clamp(42px,11vw,68px); }
       .intro { font-size:17px; }
-      .follow-label { margin-top:34px; }
+      .follow-label { margin:0 0 15px; }
+      .teaser-wrap { margin-top:38px; }
+      .follow-block { margin-top:32px; }
+      .socials a { width:56px; height:56px; }
       .teaser { border-width:7px; border-radius:13px; }
       .corner { top:15px; left:16px; font-size:9px; }
       .question { font-size:clamp(105px,31vw,170px); }
       .teaser-bottom { right:16px; bottom:13px; left:16px; padding-top:10px; font-size:8px; }
-      .footer-inner { align-items:flex-start; flex-direction:column; }
-      .footer-links { justify-content:flex-start; gap:12px 19px; }
     }
     @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; } }
   </style>
@@ -89,12 +90,7 @@
       <p class="eyebrow" data-i18n="eyebrow">Un nuevo espacio está en camino</p>
       <h1 data-i18n="title">Próximamente.</h1>
       <span class="accent-line" aria-hidden="true"></span>
-      <p class="intro" data-i18n="intro">Estoy preparando un espacio para compartir ideas y llevarlas a la práctica. Mientras tanto, nos vemos en YouTube e Instagram.</p>
-      <p class="follow-label" data-i18n="follow">Sígueme mientras tanto</p>
-      <div class="socials">
-        <a href="https://youtube.com/@soyadrianlatorre" target="_blank" rel="noopener">YouTube ↗</a>
-        <a href="https://www.instagram.com/soyadrianlatorre/" target="_blank" rel="noopener">Instagram ↗</a>
-      </div>
+      <p class="intro" data-i18n="intro">Estoy preparando un espacio para compartir ideas y llevarlas a la práctica. Mientras tanto, puedes seguirme en redes.</p>
     </div>
     <div class="teaser-wrap">
       <div class="teaser" role="img" aria-label="Avance de un nuevo espacio, próximamente" data-i18n-aria="teaserLabel">
@@ -103,22 +99,25 @@
         <span class="teaser-bottom" aria-hidden="true"><span data-i18n="teaserBottom">El siguiente capítulo</span><span>© 2026</span></span>
       </div>
     </div>
+    <div class="follow-block">
+      <p class="follow-label" data-i18n="follow">Sígueme mientras tanto</p>
+      <nav class="socials" aria-label="Redes sociales / Social media">
+        <a href="https://youtube.com/@soyadrianlatorre" aria-label="YouTube" title="YouTube" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="5" fill="#FF0000"/><path d="M10 8.4L16 12l-6 3.6z" fill="#fff"/></svg></a>
+        <a href="https://www.instagram.com/soyadrianlatorre/" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="igGrad" x1="0" x2="1" y1="1" y2="0"><stop offset="0" stop-color="#FFD600"/><stop offset=".35" stop-color="#FF7A00"/><stop offset=".7" stop-color="#D300C5"/><stop offset="1" stop-color="#7638FA"/></linearGradient></defs><rect x="2" y="2" width="20" height="20" rx="6" fill="url(#igGrad)"/><circle cx="12" cy="12" r="4.4" fill="none" stroke="#fff" stroke-width="2"/><circle cx="17.4" cy="6.7" r="1.2" fill="#fff"/></svg></a>
+        <a href="https://www.tiktok.com/@soyadrianlatorre" aria-label="TikTok" title="TikTok" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 3.2c.5 2.8 2 4.4 4.8 4.7v3.2c-1.8 0-3.4-.5-4.7-1.4v6.1a5.3 5.3 0 1 1-4.5-5.2v3.3a2.1 2.1 0 1 0 1.3 2V3.2h3.1z" fill="#111"/><path d="M14.7 3.2c.3 1.8 1.1 3.1 2.4 3.9" fill="none" stroke="#25F4EE" stroke-width="1.3"/><path d="M10.3 10.7a5.3 5.3 0 0 0-3.7 8.9" fill="none" stroke="#FE2C55" stroke-width="1.3"/></svg></a>
+      </nav>
+    </div>
   </main>
   <footer class="site-footer">
     <div class="shell footer-inner">
       <span>© 2026 Adrián Latorre</span>
-      <nav class="footer-links" aria-label="Explorar">
-        <a href="sobre-mi.html" data-i18n="about">Sobre mí</a>
-        <a href="books.html" data-i18n="books">Mis lecturas</a>
-        <a href="freelancing/" data-i18n="work">Servicios profesionales</a>
-      </nav>
     </div>
   </footer>
   <script>
     (() => {
       const copy = {
-        es: { eyebrow:'Un nuevo espacio está en camino', title:'Próximamente.', intro:'Estoy preparando un espacio para compartir ideas y llevarlas a la práctica. Mientras tanto, nos vemos en YouTube e Instagram.', follow:'Sígueme mientras tanto', teaserTop:'Algo nuevo', teaserBottom:'El siguiente capítulo', teaserLabel:'Avance de un nuevo espacio, próximamente', about:'Sobre mí', books:'Mis lecturas', work:'Servicios profesionales', pageTitle:'Próximamente — Adrián Latorre' },
-        en: { eyebrow:'A new space is on its way', title:'Coming soon.', intro:'I’m preparing a space to share ideas and put them into practice. Until then, find me on YouTube and Instagram.', follow:'Follow along for now', teaserTop:'Something new', teaserBottom:'The next chapter', teaserLabel:'Preview of a new space, coming soon', about:'About me', books:'My reading', work:'Professional services', pageTitle:'Coming soon — Adrián Latorre' }
+        es: { eyebrow:'Un nuevo espacio está en camino', title:'Próximamente.', intro:'Estoy preparando un espacio para compartir ideas y llevarlas a la práctica. Mientras tanto, puedes seguirme en redes.', follow:'Sígueme mientras tanto', teaserTop:'Algo nuevo', teaserBottom:'El siguiente capítulo', teaserLabel:'Avance de un nuevo espacio, próximamente', pageTitle:'Próximamente — Adrián Latorre' },
+        en: { eyebrow:'A new space is on its way', title:'Coming soon.', intro:'I’m preparing a space to share ideas and put them into practice. Until then, you can follow along on social media.', follow:'Follow along for now', teaserTop:'Something new', teaserBottom:'The next chapter', teaserLabel:'Preview of a new space, coming soon', pageTitle:'Coming soon — Adrián Latorre' }
       };
       function setLang(lang) {
         document.documentElement.lang = lang;
